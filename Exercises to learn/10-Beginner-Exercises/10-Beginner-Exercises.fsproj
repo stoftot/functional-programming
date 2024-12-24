@@ -8,9 +8,14 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="factorial.fs" />
         <Compile Include="squareList.fs" />
+        <Compile Include="factorial.fs" />
+        <Compile Include="filterEven.fs" />
         <Compile Include="program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="descreption.txt" />
     </ItemGroup>
 
 </Project>

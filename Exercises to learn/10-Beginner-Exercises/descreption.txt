@@ -1,0 +1,13 @@
+﻿squareList = Basics of Functional Programming
+    Task: Write a function squareList that takes a list of integers 
+    and returns a new list where each element is squared.
+
+factorial = Recursion, a method calling itself
+    Task: Create a recursive function factorial to calculate the factorial of a given integer.
+
+filterEven = Higher-Order Functions
+    A Higher-Order Function (HOF) is a function that either:
+        1. Takes one or more functions as arguments, or
+        2. Returns a function as its result, or
+        3. Does both.
+    Task: Write a function filterEven that filters out odd numbers from a list using a higher-order function

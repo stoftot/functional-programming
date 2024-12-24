@@ -2,6 +2,7 @@
 
 open Microsoft.FSharp.Core
 
+//recursion
 module Factorial =
     let rec private factorialHelper (number: int) (value: int64) : int64 =
         if number > 1 then
