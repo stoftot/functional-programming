@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <RootNamespace>_10_Beginner_Exercises</RootNamespace>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <OutputType>Exe</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="factorial.fs" />
+        <Compile Include="squareList.fs" />
+        <Compile Include="program.fs" />
+    </ItemGroup>
+
+</Project>
