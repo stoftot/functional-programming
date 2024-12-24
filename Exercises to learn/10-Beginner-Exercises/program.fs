@@ -4,6 +4,7 @@ open _10_Beginner_Exercises.SquareList
 open _10_Beginner_Exercises.Factorial
 open _10_Beginner_Exercises.classifyNumber
 open _10_Beginner_Exercises.filterEven
+open _10_Beginner_Exercises.pipelinesAndComposition
 
 [<EntryPoint>]
 let main argv =
@@ -13,6 +14,8 @@ let main argv =
      
     //printfn "%A" (FilterEven.filterEven [1; 2; 3; 4])
     
-    [-1; 0; 1] |> List.iter(fun n -> printfn "%A" (ClassifyNumber.classifyNumber n))
+    //[-1; 0; 1] |> List.iter(fun n -> printfn "%A" (ClassifyNumber.classifyNumber n))
+    
+    PipelinesAndComposition.pipelinesAndComposition [1; 2; 3; 4]
     
     0 // Return an integer exit code

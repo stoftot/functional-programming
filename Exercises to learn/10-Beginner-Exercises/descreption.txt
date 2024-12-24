@@ -15,3 +15,7 @@ filterEven = Higher-Order Functions
 classifyNumber = Pattern Matching
     Task: Implement a function classifyNumber that categorizes integers 
     into "Positive", "Negative", or "Zero" using pattern matching.
+    
+Pipelines and Composition
+    Task: Combine a series of functions (e.g., double, increment, square) 
+    into a single pipeline using the |> operator to transform a list of integers.

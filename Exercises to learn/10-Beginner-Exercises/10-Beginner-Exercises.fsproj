@@ -12,6 +12,7 @@
         <Compile Include="factorial.fs" />
         <Compile Include="filterEven.fs" />
         <Compile Include="classifyNumber.fs" />
+        <Compile Include="pipelinesAndComposition.fs" />
         <Compile Include="program.fs" />
     </ItemGroup>
 
