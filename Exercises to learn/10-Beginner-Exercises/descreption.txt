@@ -11,3 +11,7 @@ filterEven = Higher-Order Functions
         2. Returns a function as its result, or
         3. Does both.
     Task: Write a function filterEven that filters out odd numbers from a list using a higher-order function
+    
+classifyNumber = Pattern Matching
+    Task: Implement a function classifyNumber that categorizes integers 
+    into "Positive", "Negative", or "Zero" using pattern matching.

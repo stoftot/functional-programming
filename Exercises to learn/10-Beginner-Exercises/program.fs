@@ -2,16 +2,17 @@
 
 open _10_Beginner_Exercises.SquareList
 open _10_Beginner_Exercises.Factorial
+open _10_Beginner_Exercises.classifyNumber
 open _10_Beginner_Exercises.filterEven
 
 [<EntryPoint>]
 let main argv =
-    //let squaredNumbers = SquareList.square [1; 2; 3; 4]
-    //printfn "%A" squaredNumbers
+    //printfn "%A" (SquareList.square [1; 2; 3; 4])
     
-    //let factorial = Factorial.factorial 13
-    //printfn "%A" factorial
+    //printfn "%A" (Factorial.factorial 13)
+     
+    //printfn "%A" (FilterEven.filterEven [1; 2; 3; 4])
     
-    let filterEven = FilterEven.filterEven [1; 2; 3; 4]
-    printfn "%A" filterEven
+    [-1; 0; 1] |> List.iter(fun n -> printfn "%A" (ClassifyNumber.classifyNumber n))
+    
     0 // Return an integer exit code
