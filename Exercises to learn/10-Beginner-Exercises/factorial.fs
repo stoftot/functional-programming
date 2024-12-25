@@ -4,10 +4,8 @@ open Microsoft.FSharp.Core
 
 //recursion
 module Factorial =
-    let rec private factorialHelper (number: int) (value: int64) : int64 =
+    let rec factorial (number: int) : int64 =
         if number > 1 then
-            factorialHelper (number - 1) (value * int64 number)
+            int64 number * factorial (number - 1)
         else
-            (value * int64 number)
-
-    let factorial (number: int) : int64 = factorialHelper number 1
+            number
