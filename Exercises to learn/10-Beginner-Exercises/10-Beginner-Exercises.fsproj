@@ -14,6 +14,7 @@
         <Compile Include="classifyNumber.fs" />
         <Compile Include="pipelinesAndComposition.fs" />
         <Compile Include="sumAndProduct.fs" />
+        <Compile Include="shape.fs" />
         <Compile Include="program.fs" />
     </ItemGroup>
 

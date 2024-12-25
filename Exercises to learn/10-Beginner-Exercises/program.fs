@@ -1,6 +1,7 @@
 ﻿module Program
 
 open _10_Beginner_Exercises
+open _10_Beginner_Exercises.Area
 open _10_Beginner_Exercises.SquareList
 open _10_Beginner_Exercises.Factorial
 open _10_Beginner_Exercises.classifyNumber
@@ -20,6 +21,10 @@ let main argv =
     
     //PipelinesAndComposition.pipelinesAndComposition [1; 2; 3; 4]
     
-    printfn "%A" (SumAndProduct.sumAndProduct 2 3)
+    //printfn "%A" (SumAndProduct.sumAndProduct 2 3)
+    
+    printfn "%A" (Area.area (Circle 5))
+    printfn "%A" (Area.area (Rectangle (5, 5)))
+    
     
     0 // Return an integer exit code

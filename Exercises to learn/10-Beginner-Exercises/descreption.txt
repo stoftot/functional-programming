@@ -23,3 +23,7 @@ Pipelines and Composition
 sumAndProduct = Working with Tuples
     Task: Write a function sumAndProduct that takes two integers 
     and returns a tuple containing their sum and product.
+    
+shape = Custom Types and Discriminated Unions
+    Task: Define a discriminated union Shape with types Circle (radius) 
+    and Rectangle (width, height). Write a function area that calculates the area of a given shape.
