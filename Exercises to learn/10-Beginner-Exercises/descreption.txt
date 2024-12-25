@@ -35,3 +35,7 @@ binaryTree = Recursive Data Structures
 add = Partial Application and Currying
     Task: Create a curried function add that adds two numbers. 
     Use partial application to create a new function addFive which adds 5 to its input.
+    
+generateInfiniteSequence = Lazy Evaluation
+    Task: Write a function generateInfiniteSequence that lazily generates 
+    an infinite sequence of Fibonacci numbers using the Seq module.

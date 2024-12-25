@@ -4,6 +4,7 @@ open _10_Beginner_Exercises
 open _10_Beginner_Exercises.Add
 open _10_Beginner_Exercises.Area
 open _10_Beginner_Exercises.BinaryTree
+open _10_Beginner_Exercises.GenerateInfiniteSequence
 open _10_Beginner_Exercises.SquareList
 open _10_Beginner_Exercises.Factorial
 open _10_Beginner_Exercises.classifyNumber
@@ -33,8 +34,10 @@ let main argv =
     //                 Node(3,Node(4,Leaf,Leaf),Leaf))
     // printfn "%A" (BinaryTree.sumTree tree)
     
-    let addFive = Add.add 5
-    printfn "%A" (addFive 10)
-    printfn "%A" (Add.addFive 5)
+    // let addFive = Add.add 5
+    // printfn "%A" (addFive 10)
+    // printfn "%A" (Add.addFive 5)
+    
+    printfn "%A" (GenerateInfiniteSequence.fibs |> Seq.take 10 |> Seq.toList)
     
     0 // Return an integer exit code

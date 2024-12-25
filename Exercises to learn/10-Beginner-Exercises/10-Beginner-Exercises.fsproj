@@ -17,6 +17,7 @@
         <Compile Include="shape.fs" />
         <Compile Include="binaryTree.fs" />
         <Compile Include="add.fs" />
+        <Compile Include="generateInfiniteSequence.fs" />
         <Compile Include="program.fs" />
     </ItemGroup>
 
