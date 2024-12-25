@@ -27,3 +27,7 @@ sumAndProduct = Working with Tuples
 shape = Custom Types and Discriminated Unions
     Task: Define a discriminated union Shape with types Circle (radius) 
     and Rectangle (width, height). Write a function area that calculates the area of a given shape.
+    
+binaryTree = Recursive Data Structures
+    Task: Implement a recursive data structure for a binary tree 
+    and write a function sumTree that calculates the sum of all values in the tree.
