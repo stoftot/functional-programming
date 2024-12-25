@@ -16,6 +16,7 @@
         <Compile Include="sumAndProduct.fs" />
         <Compile Include="shape.fs" />
         <Compile Include="binaryTree.fs" />
+        <Compile Include="add.fs" />
         <Compile Include="program.fs" />
     </ItemGroup>
 

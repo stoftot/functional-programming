@@ -31,3 +31,7 @@ shape = Custom Types and Discriminated Unions
 binaryTree = Recursive Data Structures
     Task: Implement a recursive data structure for a binary tree 
     and write a function sumTree that calculates the sum of all values in the tree.
+
+add = Partial Application and Currying
+    Task: Create a curried function add that adds two numbers. 
+    Use partial application to create a new function addFive which adds 5 to its input.

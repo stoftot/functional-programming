@@ -1,6 +1,7 @@
 ﻿module Program
 
 open _10_Beginner_Exercises
+open _10_Beginner_Exercises.Add
 open _10_Beginner_Exercises.Area
 open _10_Beginner_Exercises.BinaryTree
 open _10_Beginner_Exercises.SquareList
@@ -31,5 +32,9 @@ let main argv =
     //                 Node(2, Leaf, Leaf),
     //                 Node(3,Node(4,Leaf,Leaf),Leaf))
     // printfn "%A" (BinaryTree.sumTree tree)
+    
+    let addFive = Add.add 5
+    printfn "%A" (addFive 10)
+    printfn "%A" (Add.addFive 5)
     
     0 // Return an integer exit code
