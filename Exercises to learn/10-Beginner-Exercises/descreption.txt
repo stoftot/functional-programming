@@ -19,3 +19,7 @@ classifyNumber = Pattern Matching
 Pipelines and Composition
     Task: Combine a series of functions (e.g., double, increment, square) 
     into a single pipeline using the |> operator to transform a list of integers.
+    
+sumAndProduct = Working with Tuples
+    Task: Write a function sumAndProduct that takes two integers 
+    and returns a tuple containing their sum and product.

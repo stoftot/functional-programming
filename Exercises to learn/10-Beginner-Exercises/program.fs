@@ -1,10 +1,12 @@
 ﻿module Program
 
+open _10_Beginner_Exercises
 open _10_Beginner_Exercises.SquareList
 open _10_Beginner_Exercises.Factorial
 open _10_Beginner_Exercises.classifyNumber
 open _10_Beginner_Exercises.filterEven
 open _10_Beginner_Exercises.pipelinesAndComposition
+open _10_Beginner_Exercises.SumAndProduct
 
 [<EntryPoint>]
 let main argv =
@@ -16,6 +18,8 @@ let main argv =
     
     //[-1; 0; 1] |> List.iter(fun n -> printfn "%A" (ClassifyNumber.classifyNumber n))
     
-    PipelinesAndComposition.pipelinesAndComposition [1; 2; 3; 4]
+    //PipelinesAndComposition.pipelinesAndComposition [1; 2; 3; 4]
+    
+    printfn "%A" (SumAndProduct.sumAndProduct 2 3)
     
     0 // Return an integer exit code
