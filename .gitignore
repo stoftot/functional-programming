@@ -82,3 +82,6 @@ fabric.properties
 
 # End of https://www.toptal.com/developers/gitignore/api/rider
 /Exercises to learn/10-Beginner-Exercises/.idea
+.idea/
+obj/
+bin/
