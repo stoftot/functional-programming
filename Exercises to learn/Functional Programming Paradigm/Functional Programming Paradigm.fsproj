@@ -7,7 +7,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <Compile Include="FirstClassFunction.fs" />
         <Compile Include="Program.fs"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="Descreptions.txt" />
     </ItemGroup>
 
 </Project>

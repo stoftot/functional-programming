@@ -1,0 +1,4 @@
+First-Class Functions
+    Task: Write a function applyTwice that takes another function and a value, 
+    and applies the function to the value twice. 
+    For example, applyTwice (fun x -> x * 2) 3 should return 12.
