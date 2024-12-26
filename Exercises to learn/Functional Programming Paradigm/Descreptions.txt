@@ -2,3 +2,13 @@ First-Class Functions
     Task: Write a function applyTwice that takes another function and a value, 
     and applies the function to the value twice. 
     For example, applyTwice (fun x -> x * 2) 3 should return 12.
+    
+    Relevance: This task demonstrates how functions can be treated as values and passed as arguments.
+    
+Higher-Order Functions
+    Task: Create a function filterMap that combines filtering and mapping into one operation. 
+    It should take a predicate function, a transformation function, and a list, 
+    and return a new list of transformed elements that satisfy the predicate.
+    
+    Relevance: This highlights how functions can be used as arguments 
+    and combined to create more abstract operations.

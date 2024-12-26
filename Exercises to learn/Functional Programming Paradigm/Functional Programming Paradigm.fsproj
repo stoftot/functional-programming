@@ -8,6 +8,7 @@
 
     <ItemGroup>
         <Compile Include="FirstClassFunction.fs" />
+        <Compile Include="HigherOrderFunctions.fs" />
         <Compile Include="Program.fs"/>
     </ItemGroup>
 
