@@ -12,3 +12,10 @@ Higher-Order Functions
     
     Relevance: This highlights how functions can be used as arguments 
     and combined to create more abstract operations.
+    
+Type Inference and Polymorphism
+    Task: Implement a function findFirst that takes a predicate and a list, 
+    and returns the first element satisfying the predicate. 
+    The function should be generic, working with any type.
+    
+    Relevance: This task showcases F#’s ability to infer types and write polymorphic functions.

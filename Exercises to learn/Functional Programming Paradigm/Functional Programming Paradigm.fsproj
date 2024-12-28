@@ -9,6 +9,7 @@
     <ItemGroup>
         <Compile Include="FirstClassFunction.fs" />
         <Compile Include="HigherOrderFunctions.fs" />
+        <Compile Include="TypeInferenceAndPolymorphism.fs" />
         <Compile Include="Program.fs"/>
     </ItemGroup>
 
