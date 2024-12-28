@@ -19,3 +19,11 @@ Type Inference and Polymorphism
     The function should be generic, working with any type.
     
     Relevance: This task showcases F#’s ability to infer types and write polymorphic functions.
+    
+Recursion and Tail Recursion
+    Task: Write a function sumList to calculate the sum of elements in a 
+    list using both regular recursion and tail recursion. 
+    Compare their performance for large lists.
+    
+    Relevance: This demonstrates the concept of recursion 
+    and the importance of optimizing it with tail recursion to avoid stack overflow.
