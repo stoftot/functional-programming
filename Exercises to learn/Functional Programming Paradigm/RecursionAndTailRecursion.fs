@@ -8,10 +8,12 @@ module RecursionAndTailRecursion =
         | [] -> LanguagePrimitives.GenericZero
         | head :: tail -> head + sumList tail
     
-    let rec  sumListTail (list: int list) (acc: int) : int =
-        match list with
-        | [] -> acc
-        | head::tail -> sumListTail tail (acc + head)
+    let sumListTail (list: int list) : int =
+        let rec loop (list: int list) (acc: int) : int =
+            match list with
+            | [] -> acc
+            | head::tail -> loop tail (acc + head)
+        loop list 0
         
     let generateBigList : int list =
         List.init 10_000 id

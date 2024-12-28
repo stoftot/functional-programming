@@ -26,8 +26,5 @@ open Microsoft.FSharp.Core
 
 let (time, result) = Utils.timeFunction RecursionAndTailRecursion.sumList RecursionAndTailRecursion.generateBigList
 printfn $"Time: %A{time}, Result: %d{result}"
-let (time2, result2) = 
-    Utils.timeFunction 
-        (fun (list, acc) -> RecursionAndTailRecursion.sumListTail list acc) 
-        (RecursionAndTailRecursion.generateBigList, 0)
+let (time2, result2) = Utils.timeFunction RecursionAndTailRecursion.sumListTail RecursionAndTailRecursion.generateBigList
 printfn $"Time: %A{time2}, Result: %d{result2}"
