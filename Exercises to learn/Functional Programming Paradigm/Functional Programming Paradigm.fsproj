@@ -12,6 +12,7 @@
         <Compile Include="HigherOrderFunctions.fs" />
         <Compile Include="TypeInferenceAndPolymorphism.fs" />
         <Compile Include="RecursionAndTailRecursion.fs" />
+        <Compile Include="AlgebraicDataTypes.fs" />
         <Compile Include="Program.fs"/>
     </ItemGroup>
 

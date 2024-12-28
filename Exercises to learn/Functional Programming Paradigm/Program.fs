@@ -1,6 +1,7 @@
 ﻿// For more information see https://aka.ms/fsharp-console-apps
 
 open Functional_Programming_Paradigm
+open Functional_Programming_Paradigm.AlgebraicDataTypes
 open Functional_Programming_Paradigm.FirstClassFunction
 open Functional_Programming_Paradigm.HigherOrderFunctions
 open Functional_Programming_Paradigm.RecursionAndTailRecursion
@@ -24,7 +25,10 @@ open Microsoft.FSharp.Core
 // printfn "%A" (TypeInferenceAndPolymorphism.findFirst words predicate)
 // printfn "%A" (TypeInferenceAndPolymorphism.findFirst words predicate2)
 
-let (time, result) = Utils.timeFunction RecursionAndTailRecursion.sumList RecursionAndTailRecursion.generateBigList
-printfn $"Time: %A{time}, Result: %d{result}"
-let (time2, result2) = Utils.timeFunction RecursionAndTailRecursion.sumListTail RecursionAndTailRecursion.generateBigList
-printfn $"Time: %A{time2}, Result: %d{result2}"
+// let (time, result) = Utils.timeFunction RecursionAndTailRecursion.sumList RecursionAndTailRecursion.generateBigList
+// printfn $"Time: {time}, Result: {result}"
+// let (time2, result2) = Utils.timeFunction RecursionAndTailRecursion.sumListTail RecursionAndTailRecursion.generateBigList
+// printfn $"Time: {time2}, Result: {result2}"
+
+printfn "%A" (AlgebraicDataTypes.area (AlgebraicDataTypes.Circle 2))
+printfn "%A" (AlgebraicDataTypes.area (AlgebraicDataTypes.Rectangle (2, 2)))

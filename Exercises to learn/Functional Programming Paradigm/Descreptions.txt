@@ -27,3 +27,9 @@ Recursion and Tail Recursion
     
     Relevance: This demonstrates the concept of recursion 
     and the importance of optimizing it with tail recursion to avoid stack overflow.
+    
+Algebraic Data Types
+    Task: Define a discriminated union Shape with cases Circle (radius) and Rectangle (width and height). 
+    Implement a function area that computes the area of any shape.
+    
+    Relevance: This task demonstrates the power of algebraic data types for modeling diverse but related data.
