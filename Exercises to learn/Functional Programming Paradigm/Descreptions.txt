@@ -33,3 +33,9 @@ Algebraic Data Types
     Implement a function area that computes the area of any shape.
     
     Relevance: This task demonstrates the power of algebraic data types for modeling diverse but related data.
+
+Strict and Lazy Evaluation
+    Task: Create a function lazyFibonacci that generates an infinite 
+    sequence of Fibonacci numbers. Use both strict and lazy evaluation to demonstrate their differences.
+    
+    Relevance: This task contrasts the evaluation strategies in F#.

@@ -13,6 +13,7 @@
         <Compile Include="TypeInferenceAndPolymorphism.fs" />
         <Compile Include="RecursionAndTailRecursion.fs" />
         <Compile Include="AlgebraicDataTypes.fs" />
+        <Compile Include="StrictAndLazyEvaluation.fs" />
         <Compile Include="Program.fs"/>
     </ItemGroup>
 
