@@ -4,6 +4,7 @@ open Functional_Programming_Paradigm
 open Functional_Programming_Paradigm.AlgebraicDataTypes
 open Functional_Programming_Paradigm.FirstClassFunction
 open Functional_Programming_Paradigm.HigherOrderFunctions
+open Functional_Programming_Paradigm.ParserCombinators
 open Functional_Programming_Paradigm.RecursionAndTailRecursion
 open Functional_Programming_Paradigm.StrictAndLazyEvaluation
 open Functional_Programming_Paradigm.TypeInferenceAndPolymorphism
@@ -34,5 +35,11 @@ open Microsoft.FSharp.Core
 // printfn "%A" (AlgebraicDataTypes.area (AlgebraicDataTypes.Circle 2))
 // printfn "%A" (AlgebraicDataTypes.area (AlgebraicDataTypes.Rectangle (2, 2)))
 
-printfn "%A" (StrictAndLazyEvaluation.strictFib 10)
-printfn "%A" (StrictAndLazyEvaluation.lazyFib |> Seq.take 10 |> Seq.toList)
+// printfn "%A" (StrictAndLazyEvaluation.strictFib 10)
+// printfn "%A" (StrictAndLazyEvaluation.lazyFib |> Seq.take 10 |> Seq.toList)
+
+let msg, result = ParserCombinators.parseStringToIntList "1,2,3,4" 
+let msg2, result2 = ParserCombinators.parseStringToIntList "1,,2"
+
+printf $"msg: {msg}\nresult: {result}\n\n"
+printf $"msg: {msg2}\nresult: {result2}\n\n"

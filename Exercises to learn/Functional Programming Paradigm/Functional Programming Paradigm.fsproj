@@ -14,11 +14,16 @@
         <Compile Include="RecursionAndTailRecursion.fs" />
         <Compile Include="AlgebraicDataTypes.fs" />
         <Compile Include="StrictAndLazyEvaluation.fs" />
+        <Compile Include="ParserCombinators.fs" />
         <Compile Include="Program.fs"/>
     </ItemGroup>
 
     <ItemGroup>
       <Content Include="Descreptions.txt" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FParsec" Version="1.1.1" />
     </ItemGroup>
 
 </Project>

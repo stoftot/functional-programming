@@ -39,3 +39,8 @@ Strict and Lazy Evaluation
     sequence of Fibonacci numbers. Use both strict and lazy evaluation to demonstrate their differences.
     
     Relevance: This task contrasts the evaluation strategies in F#.
+    
+Parser Combinators
+    Task: Build a simple parser that parses a comma-separated list of integers (e.g., "1,2,3") into a list of integers.
+    
+    Relevance: This task introduces parser combinators for building modular and composable parsers.
