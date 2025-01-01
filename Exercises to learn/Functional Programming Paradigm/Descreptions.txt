@@ -44,3 +44,9 @@ Parser Combinators
     Task: Build a simple parser that parses a comma-separated list of integers (e.g., "1,2,3") into a list of integers.
     
     Relevance: This task introduces parser combinators for building modular and composable parsers.
+    
+Monads
+    Task: Implement a function safeDivide using the Option monad, 
+    which safely divides two numbers, returning None if dividing by zero, and chaining computations.
+    
+    Relevance: This task demonstrates how monads handle computations that may fail, in a clean and functional way.

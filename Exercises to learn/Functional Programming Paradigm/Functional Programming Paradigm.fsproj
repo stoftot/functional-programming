@@ -15,6 +15,7 @@
         <Compile Include="AlgebraicDataTypes.fs" />
         <Compile Include="StrictAndLazyEvaluation.fs" />
         <Compile Include="ParserCombinators.fs" />
+        <Compile Include="Monads.fs" />
         <Compile Include="Program.fs"/>
     </ItemGroup>
 
