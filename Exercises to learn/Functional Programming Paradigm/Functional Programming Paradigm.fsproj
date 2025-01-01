@@ -8,19 +8,20 @@
 
     <ItemGroup>
         <Compile Include="Utils.fs" />
-        <Compile Include="FirstClassFunction.fs" />
-        <Compile Include="HigherOrderFunctions.fs" />
-        <Compile Include="TypeInferenceAndPolymorphism.fs" />
-        <Compile Include="RecursionAndTailRecursion.fs" />
-        <Compile Include="AlgebraicDataTypes.fs" />
-        <Compile Include="StrictAndLazyEvaluation.fs" />
-        <Compile Include="ParserCombinators.fs" />
-        <Compile Include="Monads.fs" />
-        <Compile Include="Program.fs"/>
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="Descreptions.txt" />
+      <Content Include="Difrente paradigm\Descreptions.txt" />
+      <Compile Include="Difrente paradigm\FirstClassFunction.fs" />
+      <Compile Include="Difrente paradigm\HigherOrderFunctions.fs" />
+      <Compile Include="Difrente paradigm\TypeInferenceAndPolymorphism.fs" />
+      <Compile Include="Difrente paradigm\RecursionAndTailRecursion.fs" />
+      <Compile Include="Difrente paradigm\AlgebraicDataTypes.fs" />
+      <Compile Include="Difrente paradigm\StrictAndLazyEvaluation.fs" />
+      <Compile Include="Difrente paradigm\ParserCombinators.fs" />
+      <Compile Include="Difrente paradigm\Monads.fs" />
+      <Folder Include="Combined tasks\" />
+      <Compile Include="Program.fs" />
     </ItemGroup>
 
     <ItemGroup>
