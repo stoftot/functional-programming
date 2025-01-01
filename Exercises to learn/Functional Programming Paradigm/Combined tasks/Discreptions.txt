@@ -1,0 +1,10 @@
+Function Pipeline with Algebraic Data Types
+    Task: Define a Shape type (from the Algebraic Data Types task) 
+    and create a function pipeline that accepts a list of shapes, 
+    filters out rectangles with an area below a certain threshold, 
+    and maps the remaining shapes to their areas.
+    
+    Principles: Higher-Order Functions, Algebraic Data Types
+    
+    Learning Outcome: This task demonstrates how algebraic data types 
+    can be processed using higher-order functions like filter and map.

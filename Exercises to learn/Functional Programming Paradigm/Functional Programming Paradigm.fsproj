@@ -20,7 +20,8 @@
       <Compile Include="Difrente paradigm\StrictAndLazyEvaluation.fs" />
       <Compile Include="Difrente paradigm\ParserCombinators.fs" />
       <Compile Include="Difrente paradigm\Monads.fs" />
-      <Folder Include="Combined tasks\" />
+      <Content Include="Combined tasks\Discreptions.txt" />
+      <Compile Include="Combined tasks\PipelineWithAlgebraicDataTypes.fs" />
       <Compile Include="Program.fs" />
     </ItemGroup>
 
