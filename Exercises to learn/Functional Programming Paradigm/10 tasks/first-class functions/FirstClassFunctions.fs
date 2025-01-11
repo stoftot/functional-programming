@@ -1,5 +1,6 @@
 ﻿module Functional_Programming_Paradigm._10_tasks.first_class_functions.FirstClassFunctions
 
+open System.Diagnostics
 open Microsoft.FSharp.Core
 
 module FirstClassFunctions =
@@ -58,3 +59,11 @@ module FirstClassFunctions =
     let mapReduce (map: 'a -> 'b) (reduce: 'b list -> 'c) (lst: 'a list) : 'c =
         lst |> List.map map
         |> reduce
+        
+    //10
+    let timeFunction (f: unit -> 'a) : System.TimeSpan * 'a =
+        let stopwatch = Stopwatch.StartNew()
+        let result = f ()
+        stopwatch.Stop()                     
+        let elapsed = stopwatch.Elapsed
+        (elapsed, result)  

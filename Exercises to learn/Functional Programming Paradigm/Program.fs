@@ -137,7 +137,11 @@ module TenTasks =
         let floorFloat (x: float) = int (Math.Floor x)
         let sumList = fun lst -> List.fold (+) 0 lst
         
-        printfn $"%A{mapReduce floorFloat sumList listOfFloat}"
+        // printfn $"%A{mapReduce floorFloat sumList listOfFloat}"
+        
+        //10
+        let time3, result3 = timeFunction (fun () -> plainFib 41)
+        printfn $"Time: {time3}, Result:{result3}"
         
         printfn ""
 
