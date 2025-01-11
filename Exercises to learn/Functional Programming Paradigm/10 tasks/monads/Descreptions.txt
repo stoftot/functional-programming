@@ -1,0 +1,75 @@
+Task 1: Implement the Maybe Monad
+Goal: Create a Maybe<'T> type with cases Some of 'T and None. 
+Implement a bind function to chain computations that may produce None.
+
+Overview: Introduces the concept of monads, focusing on the ability 
+to handle optional values in a functional style.
+
+
+Task 2: Use the Result Monad for Error Handling
+Goal: Define a Result<'T, 'E> type with cases Ok of 'T and Error of 'E. 
+Implement a bind function for chaining computations that may produce errors.
+
+Overview: Demonstrates error propagation using the Result monad 
+and the utility of chaining dependent computations.
+
+
+Task 3: Chain Maybe Monad Operations
+Goal: Use the Maybe monad to implement a function 
+that takes a list of numbers and returns the square root 
+of the sum, or None if any number is negative.
+
+Overview: Highlights chaining computations with bind and encapsulating failure scenarios cleanly.
+
+
+Task 4: Validate Input with the Result Monad
+Goal: Write a function validateUser that checks a user's username and password, 
+returning Ok user if valid or an Error if invalid.
+
+Overview: Demonstrates chaining multiple validations and propagating errors using the Result monad.
+
+
+Task 5: Create a Writer Monad
+Goal: Define a Writer<'T> type that pairs a value with a log. 
+Implement bind to chain computations while accumulating logs.
+
+Overview: Introduces the Writer monad and demonstrates 
+how to track intermediate logs in a series of computations.
+
+
+Task 6: Implement a State Monad
+Goal: Define a State<'S, 'A> type to encapsulate computations that read 
+and modify a state. Implement bind to sequence stateful computations.
+
+Overview: Demonstrates the use of the State monad to handle mutable state in a functional style.
+
+
+Task 7: Parse Using the Parser Monad
+Goal: Define a Parser<'T> type to represent a computation that consumes input 
+and produces a value. Implement bind for chaining parsers.
+
+Overview: Highlights how monads can simplify complex parsing logic by sequencing dependent operations.
+
+
+Task 8: Combine Two Monads
+Goal: Write a function combine that combines the Maybe and Result 
+monads, returning None or Error if either computation fails.
+
+Overview: Demonstrates working with multiple monads and combining their 
+behaviors to handle various computation scenarios.
+
+
+Task 9: Test the Monad Laws
+Goal: Write test cases to verify the three monad laws 
+(left identity, right identity, associativity) for the Maybe monad.
+
+Overview: Encourages understanding and proving the theoretical 
+foundations of monads by testing the laws in practice.
+
+
+Task 10: Create a Monad Transformer
+Goal: Implement a MaybeResult<'T, 'E> monad transformer that 
+combines the Maybe and Result monads. Write a bind function to work seamlessly with both.
+
+Overview: Demonstrates advanced monadic concepts by stacking multiple 
+monads for more complex computation patterns.

@@ -1,0 +1,68 @@
+Task 1: Compute the Factorial of a Number
+Goal: Implement a recursive function factorial to compute the factorial of a number n.
+
+Overview: Demonstrates basic recursion. 
+The function should call itself with decremented values until the base case (n = 1) is reached.
+
+
+Task 2: Tail-Recursive Factorial
+Goal: Rewrite the factorial function to use tail recursion for optimization.
+
+Overview: Highlights the use of an accumulator to pass intermediate results, 
+enabling the function to be tail-recursive.
+
+
+Task 3: Recursive Fibonacci Sequence
+Goal: Implement a recursive function fibonacci to compute the nth Fibonacci number.
+
+Overview: Demonstrates how recursion can be used to define a sequence, 
+with a base case for n = 0 and n = 1.
+
+
+Task 4: Tail-Recursive Fibonacci
+Goal: Rewrite the fibonacci function to use tail recursion for better performance.
+
+Overview: Requires using accumulators for the last two Fibonacci numbers to avoid excessive stack usage.
+
+
+Task 5: Reverse a List Using Recursion
+Goal: Create a function reverseList that recursively reverses a list.
+
+Overview: Demonstrates recursive list processing, with a base case for an empty list 
+and combining the head and tail in reverse order.
+
+
+Task 6: Tail-Recursive List Reversal
+Goal: Rewrite the reverseList function to use tail recursion.
+
+Overview: Introduces an accumulator to store the reversed portion of the list, 
+ensuring the function is optimized for large lists.
+
+
+Task 7: Compare Recursive and Tail-Recursive Sum
+Goal: Implement two versions of a sumList function—one using basic recursion 
+and the other using tail recursion—and compare their performance on large lists.
+
+Overview: Highlights the efficiency of tail recursion by avoiding stack overflow on large inputs.
+
+
+Task 8: Compute the Depth of a Binary Tree
+Goal: Write a recursive function treeDepth to compute the maximum depth of a binary tree.
+
+Overview: Demonstrates recursion in a tree structure. 
+Each node's depth is calculated as 1 + max(leftDepth, rightDepth).
+
+
+Task 9: Tail-Recursive Depth Calculation
+Goal: Optimize the treeDepth function to use tail recursion 
+with an explicit stack or queue for tree traversal.
+
+Overview: Highlights the challenge of making tree traversal tail-recursive and optimizing memory usage.
+
+
+Task 10: Flatten a Nested List Recursively
+Goal: Implement a recursive function flatten to 
+convert a nested list (e.g., [[1; 2]; [3; [4; 5]]]) into a flat list ([1; 2; 3; 4; 5]).
+
+Overview: Demonstrates recursive list traversal to handle nested structures, 
+using pattern matching to distinguish between elements and sublists.

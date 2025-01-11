@@ -1,0 +1,74 @@
+Task 1: Generic List Mapper
+Goal: Implement a mapList function that takes a function and a list, 
+applies the function to each element, and returns the transformed list.
+
+Overview: Demonstrates passing functions as arguments. 
+Examples could include doubling numbers or converting strings to uppercase.
+
+
+Task 2: Filtering with Custom Predicates
+Goal: Create a filterList function that takes a predicate function and a list, 
+returning a list of elements that satisfy the predicate.
+
+Overview: Highlights the flexibility of higher-order functions by using different predicates, 
+such as filtering even numbers or strings longer than 5 characters.
+
+
+Task 3: Dynamic Sorting with Custom Comparators
+Goal: Write a sortList function that takes a comparator function and a list, 
+returning the list sorted according to the comparator.
+
+Overview: This task showcases passing a function to customize sorting logic, 
+such as sorting numbers in ascending/descending order or sorting strings by length.
+
+
+Task 4: Build a Function Transformer
+Goal: Implement a transformFunction that takes a function f 
+and returns a new function that applies f twice to its input (i.e., f(f(x))).
+
+Overview: Demonstrates returning a new function by transforming the input function.
+
+
+Task 5: Partial Application for Arithmetic
+Goal: Define a curried function add that takes two numbers as inputs 
+but allows for partial application (e.g., let addFive = add 5).
+
+Overview: Introduces currying and partial application, enabling the creation of specialized functions.
+
+
+Task 6: Create a Logger Wrapper
+Goal: Write a logWrapper function that takes a function f and logs its input 
+and output every time it is called.
+
+Overview: Demonstrates higher-order functions by wrapping another function and extending its behavior.
+
+
+Task 7: Implement a Fold Function
+Goal: Create a reduce function that takes an accumulator function, an initial value, 
+and a list, combining the list elements into a single result.
+
+Overview: Shows how higher-order functions can abstract aggregation logic. 
+Examples could include summing a list or concatenating strings.
+
+
+Task 8: Function Filtering Utility
+Goal: Write a filterFunctions function that takes a list of functions and a predicate, 
+returning only those functions that satisfy the predicate when applied to a test value.
+
+Overview: Demonstrates manipulating lists of functions and passing predicates for higher-level filtering.
+
+
+Task 9: Repeated Function Application
+Goal: Implement a repeat function that takes a function f and a number n, 
+returning a new function that applies f to its input n times.
+
+Overview: This task demonstrates returning functions 
+and using higher-order functions to build complex operations.
+
+
+Task 10: Generic Function Combiner
+Goal: Create a combine function that takes two functions f and g 
+and returns a new function that applies both functions to the input 
+and returns a tuple of their results (f(x), g(x)).
+
+Overview: Highlights creating new functions by combining existing ones, showcasing modularity and reuse.

@@ -1,0 +1,10 @@
+Task:
+Additional Notes:
+Core Concepts: Tasks highlight fundamental parser combinator techniques, 
+including composing parsers (andThen, orElse), repeating patterns (many), and error handling.
+
+Practical Applications: Tasks like arithmetic expression parsing, 
+JSON parsing, and CSV handling provide real-world use cases.
+
+Incremental Complexity: Tasks are structured to build on simpler parsers, 
+gradually introducing more advanced combinator functionality.

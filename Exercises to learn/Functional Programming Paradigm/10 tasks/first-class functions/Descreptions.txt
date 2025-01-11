@@ -1,0 +1,80 @@
+Task 1: Implement a Higher-Order Function for List Transformation
+Goal: Create a function transformList that takes a function and a list as inputs, 
+applies the function to each element in the list, and returns a new list.
+
+Overview: The function should showcase passing functions as arguments. 
+For example, users can pass a function to double each element or filter out odd numbers.
+
+
+Task 2: Create a Function Factory for Arithmetic Operations
+Goal: Implement a createArithmeticFunction function that returns a new function based on 
+the operation specified (e.g., add, subtract, multiply).
+
+Overview: This demonstrates returning functions as values.
+For example, calling createArithmeticFunction("add") 
+should return a function that takes two numbers and adds them.
+
+
+Task 3: Compose Two Functions
+Goal: Write a function compose that takes two functions f and g as input 
+and returns a new function representing the composition of f and g (i.e., f(g(x))).
+
+Overview: This task emphasizes composing functions. 
+Validate with examples such as composing square and increment functions.
+
+
+Task 4: Implement a Curried Function for Filtering
+Goal: Define a curried function filterGreaterThan that takes a number n 
+and returns a function that filters a list of integers, keeping only numbers greater than n.
+
+Overview: The task highlights currying in functional programming and 
+returning partially applied functions.
+
+
+Task 5: Use a Function as a Predicate
+Goal: Create a function findFirst that takes a predicate 
+(a function returning bool) and a list, 
+returning the first element that satisfies the predicate.
+
+Overview: This demonstrates passing a function 
+as a predicate and working with higher-order functions.
+
+
+Task 6: Build a Function Pipeline
+Goal: Create a pipeline using the >> operator to chain together multiple functions 
+(e.g., square, increment, and double a number).
+
+Overview: This highlights the pipeline operator and showcases 
+practical function chaining for readability and modularity.
+
+
+Task 7: Implement a Memoization Function
+Goal: Write a function memoize that takes another function 
+and returns a memoized version of it, storing computed results to improve performance.
+
+Overview: The solution demonstrates returning functions 
+and using closures to maintain state.
+
+
+Task 8: Higher-Order Function for Retry Logic
+Goal: Create a function retry that takes another function f, 
+a number of retries n, and executes f up to n times if it fails (throws an exception).
+
+Overview: This task showcases using functions as arguments and 
+handling exceptions in functional programming.
+
+
+Task 9: Implement a MapReduce Framework
+Goal: Implement a generic mapReduce function that takes a mapper function, 
+a reducer function, and an initial value, applying them to aggregate a list of data.
+
+Overview: This task integrates multiple aspects of first-class functions 
+and demonstrates how to build reusable higher-order abstractions.
+
+
+Task 10: Function Timer
+Goal: Write a timeFunction utility that takes another function as an argument 
+and measures its execution time.
+
+Overview: The task highlights treating functions as values and wrapping 
+them for enhanced functionality, such as performance measurement.

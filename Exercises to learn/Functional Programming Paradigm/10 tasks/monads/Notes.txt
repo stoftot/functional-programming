@@ -1,0 +1,11 @@
+Task:
+Additional Notes:
+Core Concepts: Tasks cover defining common monads (Maybe, Result, Writer, State), 
+chaining computations with bind, and testing monadic laws.
+
+Real-World Applications: Tasks include error handling, 
+stateful computations, and structured parsing—practical 
+use cases for monads in functional programming.
+
+Progression: Tasks gradually increase in complexity, 
+starting with simple monads and culminating in monad transformers and law verification.

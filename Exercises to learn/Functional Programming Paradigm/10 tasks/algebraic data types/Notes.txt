@@ -1,0 +1,9 @@
+Tasks:
+Core Concepts: All tasks highlight the core ideas of algebraic data types, 
+including discriminated unions, records, and pattern matching.
+
+Practical Use Cases: Tasks are designed to reflect real-world scenarios, 
+such as state machines, domain modeling, and tree structures.
+
+Extensibility: Many tasks can be extended with additional functionality, 
+such as validation, serialization, or advanced pattern matching.

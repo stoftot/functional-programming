@@ -1,0 +1,76 @@
+Task 1: Define a Discriminated Union for a Shape
+Goal: Create a discriminated union Shape with cases Circle, Rectangle, 
+and Triangle, each holding appropriate dimensions.
+
+Overview: Demonstrates defining a discriminated union and pattern matching 
+to compute properties, e.g., area or perimeter, for each shape.
+
+
+Task 2: Define a Record for a Person
+Goal: Implement a Person record type with fields Name, Age, and Address.
+
+Overview: Showcases the simplicity of defining records and accessing 
+their fields in F#. Extend functionality by writing a function to display a person's information.
+
+
+Task 3: Use Discriminated Unions for HTTP Response Status
+Goal: Define a discriminated union HttpStatus with cases like Success of int, 
+Redirect of int, ClientError of int, and ServerError of int.
+
+Overview: Demonstrates modeling domain-specific values with discriminated unions. 
+Use pattern matching to handle different cases and print appropriate messages.
+
+
+Task 4: Implement a Simple Option Type
+Goal: Define a custom discriminated union Maybe<'T> to represent 
+optional values, similar to F#'s Option<'T>.
+
+Overview: Demonstrates defining generic discriminated unions and 
+using them to model optional data. Write functions like map and bind for the Maybe<'T> type.
+
+
+Task 5: Model a Tree Using Discriminated Unions
+Goal: Define a discriminated union Tree<'T> with cases Leaf and Node 
+(containing a value and left/right subtrees).
+
+Overview: Demonstrates recursion in algebraic data types and pattern matching to 
+implement operations like tree traversal or depth calculation.
+
+
+Task 6: Use Pattern Matching with a Payment Method
+Goal: Define a discriminated union PaymentMethod with cases 
+Cash, CreditCard of string, and BankTransfer of string * string.
+
+Overview: Show how pattern matching can be used to process 
+payment information based on the method provided.
+
+
+Task 7: Define a Complex Record for an Order
+Goal: Create a record type Order with fields like 
+Id, Items (a list of item names), TotalPrice, 
+and Status (a discriminated union with cases Pending, Shipped, and Delivered).
+
+Overview: Combines records and discriminated unions to model complex data. 
+Use pattern matching to update order statuses or calculate discounts.
+
+
+Task 8: Encode an Expression Tree
+Goal: Define a discriminated union Expr with cases Constant of 
+int, Add of Expr * Expr, and Multiply of Expr * Expr to represent mathematical expressions.
+
+Overview: Use recursion and pattern matching to evaluate an expression tree or pretty-print it.
+
+
+Task 9: Implement a Command Pattern
+Goal: Define a discriminated union Command with cases like Create, Update of int, and Delete of int.
+
+Overview: Demonstrates how discriminated unions can be used to 
+represent commands in an application. Use pattern matching to process each command type.
+
+
+Task 10: Use Records and Discriminated Unions for a State Machine
+Goal: Model a finite state machine for a traffic light using a record TrafficLight 
+with fields State (a discriminated union with cases Red, Yellow, and Green) and TimeRemaining.
+
+Overview: Show how to define and use records and discriminated unions together. 
+Implement a function to transition between states and update the time.

@@ -1,0 +1,73 @@
+Task 1: Generic Identity Function
+Goal: Implement an identity function that takes any value and returns it unchanged.
+
+Overview: Demonstrates type inference by creating a generic function that can work 
+with any type, showcasing F#'s ability to infer the type automatically.
+
+
+Task 2: Generic List Reverser
+Goal: Create a reverseList function that takes a list of any type and returns the reversed list.
+
+Overview: Illustrates polymorphism and type inference in generic functions. 
+Test with lists of different types, such as integers and strings.
+
+
+Task 3: Polymorphic Function for Pair Swapping
+Goal: Write a swap function that takes a tuple (a, b) and returns (b, a).
+
+Overview: Highlights polymorphism by working with tuples of any types 
+and shows F#'s ability to infer tuple types.
+
+
+Task 4: Function for Generic List Transformation
+Goal: Implement a transformAll function that takes a transformation function 
+and a list, applying the function to each element.
+
+Overview: Demonstrates generic higher-order functions, 
+allowing the transformation function to define behavior for lists of any type.
+
+
+Task 5: Type-Inferred Pair Comparator
+Goal: Create a comparePairs function that compares two tuples (a, b) and (c, d) 
+using a generic comparison logic (e.g., compare the sum of their elements if they are numbers).
+
+Overview: This task highlights type inference and generic constraints (e.g., requiring numerical operations).
+
+
+Task 6: Generic Option Mapper
+Goal: Write a mapOption function that takes a function and an Option<'T> value, 
+applying the function to the Some value if it exists.
+
+Overview: Demonstrates polymorphism with option types 
+and showcases type inference for the transformation function.
+
+
+Task 7: Polymorphic Key-Value Finder
+Goal: Implement a findByKey function that takes a key and a list of key-value pairs, 
+returning the value associated with the key (if found).
+
+Overview: Highlights type inference in working with generic collections 
+and polymorphism in handling different key and value types.
+
+
+Task 8: Type-Inferred Aggregation Function
+Goal: Create a sumAll function that takes a list of any numeric type and returns their sum.
+
+Overview: Demonstrates the use of type constraints (^T for numeric types) 
+and polymorphism to handle various numeric types (e.g., int, float).
+
+
+
+Task 9: Generic Comparator for Custom Types
+Goal: Write a compareGeneric function that takes two values and a comparator function, 
+returning the comparison result.
+
+Overview: Demonstrates polymorphism in defining generic comparator logic that works for any type.
+
+
+Task 10: Polymorphic Function for Nested Lists
+Goal: Implement a flatten function that takes a 
+nested list (e.g., [[1; 2]; [3; 4]]) and returns a flat list (e.g., [1; 2; 3; 4]).
+
+Overview: Highlights type inference and polymorphism when working with collections of collections, 
+demonstrating F#'s ability to infer types across levels.

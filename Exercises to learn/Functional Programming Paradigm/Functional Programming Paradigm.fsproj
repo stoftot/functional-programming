@@ -22,6 +22,23 @@
       <Compile Include="Difrente paradigm\Monads.fs" />
       <Content Include="Combined tasks\Discreptions.txt" />
       <Compile Include="Combined tasks\PipelineWithAlgebraicDataTypes.fs" />
+      <Compile Include="Combined tasks\RecursiveParserForNestedData.fs" />
+      <Content Include="10 tasks\first-class functions\Descreptions.txt" />
+      <Content Include="10 tasks\first-class functions\Notes.txt" />
+      <Content Include="10 tasks\higher-order functions\Descreptions.txt" />
+      <Content Include="10 tasks\higher-order functions\Notes.txt" />
+      <Content Include="10 tasks\type inference and polymorphism\Descreptions.txt" />
+      <Content Include="10 tasks\type inference and polymorphism\Notes.txt" />
+      <Content Include="10 tasks\recursion and tail recursion\Descreptions.txt" />
+      <Content Include="10 tasks\recursion and tail recursion\Notes.txt" />
+      <Content Include="10 tasks\algebraic data types\Descreptions.txt" />
+      <Content Include="10 tasks\algebraic data types\Notes.txt" />
+      <Content Include="10 tasks\strict and lazy evaluation\Descreptions.txt" />
+      <Content Include="10 tasks\strict and lazy evaluation\Notes.txt" />
+      <Content Include="10 tasks\parser combinators\Descreptions.txt" />
+      <Content Include="10 tasks\parser combinators\Notes.txt" />
+      <Content Include="10 tasks\monads\Descreptions.txt" />
+      <Content Include="10 tasks\monads\Notes.txt" />
       <Compile Include="Program.fs" />
     </ItemGroup>
 

@@ -1,0 +1,70 @@
+Task 1: Demonstrate Strict Evaluation with a Function
+Goal: Write a function strictSum that takes two parameters 
+and returns their sum. Pass expressions with side effects to illustrate how strict evaluation works.
+
+Overview: Shows that both parameters are evaluated immediately, even if one is not used in the function.
+
+
+Task 2: Demonstrate Lazy Evaluation with lazy
+Goal: Create a lazy value using lazy to defer evaluation until explicitly accessed. 
+Write a function to print a message before returning a value, showing when the value is computed.
+
+Overview: Highlights how evaluation is deferred until .Force() is called on the lazy value.
+
+
+Task 3: Implement a Lazy Fibonacci Sequence
+Goal: Create a function lazyFibonacci that generates an infinite sequence 
+of Fibonacci numbers using Seq.unfold.
+
+Overview: Demonstrates lazy sequences and how values are computed on demand.
+
+
+Task 4: Compare Strict and Lazy Filtering
+Goal: Write two functions to filter even numbers from a large range: 
+one using a strict list and another using a lazy sequence.
+
+Overview: Highlights the performance and memory efficiency benefits 
+of lazy evaluation by comparing the two implementations.
+
+
+Task 5: Simulate a Lazy Infinite Data Stream
+Goal: Implement a lazyStream that generates an infinite stream of random numbers using Seq.initInfinite.
+
+Overview: Demonstrates how lazy sequences can be used to handle potentially infinite data efficiently.
+
+
+Task 6: Implement a Lazy Prime Number Generator
+Goal: Use the Sieve of Eratosthenes algorithm with lazy sequences 
+to generate an infinite list of prime numbers.
+
+Overview: Highlights the combination of recursion and lazy evaluation to build an efficient generator.
+
+
+Task 7: Write a Lazy Evaluation Timer
+Goal: Create a function measureLazyTime that takes a lazy value, 
+forces its evaluation, and measures how long the computation takes.
+
+Overview: Emphasizes the ability to control when and how a computation occurs using lazy.
+
+
+Task 8: Use Lazy Evaluation to Avoid Unnecessary Work
+Goal: Write a function chooseBestOption that takes two lazy values, 
+evaluates the first one, and skips the second if the first meets a condition.
+
+Overview: Demonstrates how lazy evaluation can prevent 
+unnecessary computation by evaluating only what is needed.
+
+
+Task 9: Implement a Lazy File Reader
+Goal: Create a function lazyFileReader that reads a file 
+line-by-line lazily, returning a sequence of lines.
+
+Overview: Highlights how lazy evaluation can handle large data files 
+without loading the entire content into memory.
+
+
+Task 10: Compare Performance of Strict vs Lazy Sequence Multiplication
+Goal: Multiply each element in a large list/sequence by 2, 
+using both a strict list and a lazy sequence. Measure the time and memory usage for each approach.
+
+Overview: Shows the practical performance implications of strict vs lazy evaluation.

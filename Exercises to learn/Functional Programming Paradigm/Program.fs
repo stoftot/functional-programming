@@ -62,4 +62,4 @@ module CombinedTasks =
                       PipelineWithAlgebraicDataTypes.Rectangle (5, 5)]
         printfn "%A" (PipelineWithAlgebraicDataTypes.pipeline shapes 20)
     
-    printfn ""
+        printfn ""

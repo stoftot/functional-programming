@@ -1,0 +1,75 @@
+Task 1: Implement a Basic Character Parser
+Goal: Write a simple parser charParser that takes a character and 
+matches it against the input string, returning success if the first character matches.
+
+Overview: Introduces the concept of a parser as a function 
+and demonstrates handling success and failure cases.
+
+
+Task 2: Create a String Parser
+Goal: Implement a parser stringParser that matches a specific string prefix 
+in the input and consumes it on success.
+
+Overview: Builds on the basic parser concept by matching multiple 
+characters and handling cases where the input is shorter than the string.
+
+
+Task 3: Combine Parsers with andThen
+Goal: Define a combinator andThen that takes two parsers and succeeds 
+if both parsers match consecutively, returning their combined result.
+
+Overview: Demonstrates combining parsers to build more complex functionality.
+
+
+Task 4: Implement an orElse Parser Combinator
+Goal: Create a combinator orElse that tries the first 
+parser and falls back to the second parser on failure.
+
+Overview: Introduces alternatives in parsing, 
+allowing flexible handling of different input patterns.
+
+
+Task 5: Parse Digits Using many
+Goal: Write a combinator many that applies a parser repeatedly until it fails, 
+returning a list of successful results.
+
+Overview: Demonstrates parsing repeated patterns, such as sequences of digits, 
+to build lists of parsed values.
+
+
+Task 6: Handle Whitespace with a Skipping Parser
+Goal: Create a parser skipWhitespace that consumes any 
+leading whitespace before applying another parser.
+
+Overview: Emphasizes modularity by composing whitespace handling with existing parsers.
+
+
+Task 7: Build a Simple Arithmetic Expression Parser
+Goal: Implement parsers for integers, addition (+), and multiplication (*), 
+and combine them to parse simple arithmetic expressions like "3 + 5 * 2".
+
+Overview: Combines multiple parsers and demonstrates 
+the recursive nature of parsing nested structures.
+
+
+Task 8: Add Error Handling to Parsers
+Goal: Extend existing parsers to include meaningful error messages when parsing fails, 
+indicating what went wrong and where.
+
+Overview: Introduces error handling in parser combinators to improve robustness and usability.
+
+
+Task 9: Parse JSON-like Key-Value Pairs
+Goal: Create a parser that can parse JSON-like key-value pairs, e.g., "key": "value", 
+handling strings, numbers, and nested structures.
+
+Overview: Demonstrates using parser combinators to handle structured data and 
+combining basic parsers for complex formats.
+
+
+Task 10: Implement a CSV Parser
+Goal: Write a parser that reads CSV-formatted text, 
+parsing rows of comma-separated values into a list of lists.
+
+Overview: Demonstrates the power of combinators for handling structured, 
+repetitive formats. Handle edge cases like quoted fields and empty values.
