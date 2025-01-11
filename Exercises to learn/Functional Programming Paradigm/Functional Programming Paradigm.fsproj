@@ -25,6 +25,7 @@
       <Compile Include="Combined tasks\RecursiveParserForNestedData.fs" />
       <Content Include="10 tasks\first-class functions\Descreptions.txt" />
       <Content Include="10 tasks\first-class functions\Notes.txt" />
+      <Compile Include="10 tasks\first-class functions\FirstClassFunctions.fs" />
       <Content Include="10 tasks\higher-order functions\Descreptions.txt" />
       <Content Include="10 tasks\higher-order functions\Notes.txt" />
       <Content Include="10 tasks\type inference and polymorphism\Descreptions.txt" />

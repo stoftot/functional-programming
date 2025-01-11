@@ -1,0 +1,6 @@
+All functions in f# are first-class functions.
+
+Definition:
+A first-class function in functional programming is a function 
+that is treated as a first-class citizen, meaning it can be assigned to variables, 
+passed as arguments to other functions, and returned as values from other functions.

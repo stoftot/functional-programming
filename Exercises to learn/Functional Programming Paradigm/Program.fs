@@ -1,19 +1,20 @@
 ﻿// For more information see https://aka.ms/fsharp-console-apps
 
 open Functional_Programming_Paradigm
-open Functional_Programming_Paradigm.AlgebraicDataTypes
-open Functional_Programming_Paradigm.Combined_tasks.PipelineWithAlgebraicDataTypes
-open Functional_Programming_Paradigm.FirstClassFunction
-open Functional_Programming_Paradigm.HigherOrderFunctions
-open Functional_Programming_Paradigm.Monads
-open Functional_Programming_Paradigm.ParserCombinators
-open Functional_Programming_Paradigm.RecursionAndTailRecursion
-open Functional_Programming_Paradigm.StrictAndLazyEvaluation
-open Functional_Programming_Paradigm.TypeInferenceAndPolymorphism
 open Functional_Programming_Paradigm.Utils
+open Functional_Programming_Paradigm._10_tasks.first_class_functions.FirstClassFunctions
 open Microsoft.FSharp.Core
 
 module Paradigm =
+    open Functional_Programming_Paradigm.AlgebraicDataTypes
+    open Functional_Programming_Paradigm.FirstClassFunction
+    open Functional_Programming_Paradigm.HigherOrderFunctions
+    open Functional_Programming_Paradigm.Monads
+    open Functional_Programming_Paradigm.ParserCombinators
+    open Functional_Programming_Paradigm.RecursionAndTailRecursion
+    open Functional_Programming_Paradigm.StrictAndLazyEvaluation
+    open Functional_Programming_Paradigm.TypeInferenceAndPolymorphism
+    
     let main =
         // let f1 (x: int) = x + 2
         // printfn "%A" (FirstClassFunction.applyTwice f1 2)
@@ -54,12 +55,26 @@ module Paradigm =
     
         printfn ""
 
+module TenTasks =
+    open FirstClassFunctions
+    let FirstClassFunctions =
+        let intList = [0; 1; 2; 3; 4; 5;]
+        let filterOdd = fun x -> if x % 2 = 0 then Some x else None
+        let double = fun x -> x * 2
+        
+        printfn $"%A{TransformList intList filterOdd |> List.choose id}"
+        printfn $"%A{TransformList intList double}"
+        
+        printfn ""
+
 module CombinedTasks =
+    open Functional_Programming_Paradigm.Combined_tasks.PipelineWithAlgebraicDataTypes
+    
     let main = 
-        let shapes = [PipelineWithAlgebraicDataTypes.Circle 2
-                      PipelineWithAlgebraicDataTypes.Rectangle (3.5, 3)
-                      PipelineWithAlgebraicDataTypes.Square 4
-                      PipelineWithAlgebraicDataTypes.Rectangle (5, 5)]
-        printfn "%A" (PipelineWithAlgebraicDataTypes.pipeline shapes 20)
+        // let shapes = [PipelineWithAlgebraicDataTypes.Circle 2
+        //               PipelineWithAlgebraicDataTypes.Rectangle (3.5, 3)
+        //               PipelineWithAlgebraicDataTypes.Square 4
+        //               PipelineWithAlgebraicDataTypes.Rectangle (5, 5)]
+        // printfn "%A" (PipelineWithAlgebraicDataTypes.pipeline shapes 20)
     
         printfn ""
