@@ -81,7 +81,16 @@ module TenTasks =
         
         let filterGreaterThan2 = filterGreaterThan 2
         
-        printfn $"%A{filterGreaterThan2 intList}"
+        // printfn $"%A{filterGreaterThan2 intList}"
+        
+        let isGreaterThan2 = fun x -> x > 2
+        let isGreaterThan10 = fun x -> x > 10
+        let containsA (str: string) = str.Contains("a")
+        let wordList = ["hello"; "hi"; "world"; "go away"; "stay back"]
+        
+        printfn $"%A{(findFirst isGreaterThan2 intList).Value}"
+        printfn $"%A{(findFirst containsA wordList).Value}"
+        printfn $"%A{findFirst isGreaterThan10 intList}"
         
         printfn ""
 

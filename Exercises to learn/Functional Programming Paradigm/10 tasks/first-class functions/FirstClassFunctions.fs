@@ -16,3 +16,6 @@ module FirstClassFunctions =
         
     let filterGreaterThan (n: int) : int list -> int list =
         fun list -> list |> List.filter (fun x -> x > n)
+        
+    let findFirst (predicate: 'a -> bool) (lst: 'a list) : 'a Option= 
+        lst |> List.tryFind predicate
