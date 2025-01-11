@@ -122,15 +122,22 @@ module TenTasks =
         let willFailFunction = fun () -> failwith "1 An error happened, oh no"
         let mightFail = fun x -> if Random().Next(0, 100) > 25 then failwith "2 An error happened, oh no" else x
         
-        try
-            printfn $"%A{retry willFailFunction 4}"
-        with
-        | ex -> printfn $"%A{ex.Message}"
+        // try
+        //     printfn $"%A{retry willFailFunction 4}"
+        // with
+        // | ex -> printfn $"%A{ex.Message}"
+        //
+        // try
+        //     printfn $"%A{retry (fun () -> mightFail 3) 50}"
+        // with
+        // | ex -> printfn $"%A{ex.Message}"
         
-        try
-            printfn $"%A{retry (fun () -> mightFail 3) 50}"
-        with
-        | ex -> printfn $"%A{ex.Message}"        
+        //9
+        let listOfFloat = [0.8; 1.2; 2.5; 3.6; 4.3; 5.9;]
+        let floorFloat (x: float) = int (Math.Floor x)
+        let sumList = fun lst -> List.fold (+) 0 lst
+        
+        printfn $"%A{mapReduce floorFloat sumList listOfFloat}"
         
         printfn ""
 

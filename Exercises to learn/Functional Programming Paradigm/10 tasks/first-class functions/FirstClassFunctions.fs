@@ -53,3 +53,8 @@ module FirstClassFunctions =
                 else
                     raise ex // Propagate the exception after all retries
         attempt numberOfRetries
+        
+    //9
+    let mapReduce (map: 'a -> 'b) (reduce: 'b list -> 'c) (lst: 'a list) : 'c =
+        lst |> List.map map
+        |> reduce
