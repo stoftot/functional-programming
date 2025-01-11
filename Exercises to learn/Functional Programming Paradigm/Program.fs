@@ -76,8 +76,12 @@ module TenTasks =
         let square = fun x -> x * x
         let addFive = fun x -> x + 5
         
-        printfn $"%A{compose square addFive 5}"
-        printfn $"%A{compose addFive square 5}"
+        // printfn $"%A{compose square addFive 5}"
+        // printfn $"%A{compose addFive square 5}"
+        
+        let filterGreaterThan2 = filterGreaterThan 2
+        
+        printfn $"%A{filterGreaterThan2 intList}"
         
         printfn ""
 

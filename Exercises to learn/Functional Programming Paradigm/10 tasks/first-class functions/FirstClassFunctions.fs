@@ -13,3 +13,6 @@ module FirstClassFunctions =
         
     let compose (f: 'a -> 'b) (g: 'b -> 'c) =
         fun x -> f (g x)
+        
+    let filterGreaterThan (n: int) : int list -> int list =
+        fun list -> list |> List.filter (fun x -> x > n)
