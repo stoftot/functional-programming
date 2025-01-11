@@ -62,8 +62,16 @@ module TenTasks =
         let filterOdd = fun x -> if x % 2 = 0 then Some x else None
         let double = fun x -> x * 2
         
-        printfn $"%A{TransformList intList filterOdd |> List.choose id}"
-        printfn $"%A{TransformList intList double}"
+        // printfn $"%A{transformList intList filterOdd |> List.choose id}"
+        // printfn $"%A{transformList intList double}"
+        
+        let additionFunction = createArithmeticFunction "add"
+        let subtractionFunction = createArithmeticFunction "subtract"
+        let multiplicationFunction = createArithmeticFunction "multiply"
+        
+        printfn $"%A{additionFunction 3 2}"
+        printfn $"%A{subtractionFunction 3 2}"
+        printfn $"%A{multiplicationFunction 3 2}"
         
         printfn ""
 
