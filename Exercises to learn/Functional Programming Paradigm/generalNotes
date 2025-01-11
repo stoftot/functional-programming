@@ -1,0 +1,24 @@
+Memoization
+Memoization is an optimization technique that stores the results of expensive function calls 
+and reuses those results when the same inputs occur again. 
+The term comes from "memo," as in "to remember."
+
+In simpler terms:
+- Memoization is like keeping a "logbook" of inputs and their corresponding outputs for a function.
+- If you call the function with the same input again, 
+  it skips recalculating and just looks up the result in the logbook.
+  
+Why Use Memoization?
+Memoization is useful in scenarios where:
+- Functions are called repeatedly with the same inputs.
+- Computing the result is expensive (e.g., recursive calculations like Fibonacci, factorial, etc.).
+- The function is pure, meaning its output depends only on its inputs and it has no side effects. 
+  Memoization works best for pure functions.
+  
+How Memoization Works
+When the function is called for the first time with a given input, 
+the result is calculated normally and stored in a cache 
+(a dictionary, map, or some other data structure).
+
+If the function is called again with the same input, 
+the cached result is returned immediately, skipping the computation.
