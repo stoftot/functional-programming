@@ -10,3 +10,6 @@ module FirstClassFunctions =
         | "subtract" -> (fun a b -> a - b)
         | "multiply" -> (fun a b -> a * b)
         | s -> failwith "not supported operation"
+        
+    let compose (f: 'a -> 'b) (g: 'b -> 'c) =
+        fun x -> f (g x)

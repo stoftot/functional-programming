@@ -69,9 +69,15 @@ module TenTasks =
         let subtractionFunction = createArithmeticFunction "subtract"
         let multiplicationFunction = createArithmeticFunction "multiply"
         
-        printfn $"%A{additionFunction 3 2}"
-        printfn $"%A{subtractionFunction 3 2}"
-        printfn $"%A{multiplicationFunction 3 2}"
+        // printfn $"%A{additionFunction 3 2}"
+        // printfn $"%A{subtractionFunction 3 2}"
+        // printfn $"%A{multiplicationFunction 3 2}"
+        
+        let square = fun x -> x * x
+        let addFive = fun x -> x + 5
+        
+        printfn $"%A{compose square addFive 5}"
+        printfn $"%A{compose addFive square 5}"
         
         printfn ""
 
