@@ -62,6 +62,7 @@ module TenTasks =
         let filterOdd = fun x -> if x % 2 = 0 then Some x else None
         let double = fun x -> x * 2
         
+        //1
         // printfn $"%A{transformList intList filterOdd |> List.choose id}"
         // printfn $"%A{transformList intList double}"
         
@@ -69,6 +70,7 @@ module TenTasks =
         let subtractionFunction = createArithmeticFunction "subtract"
         let multiplicationFunction = createArithmeticFunction "multiply"
         
+        //2
         // printfn $"%A{additionFunction 3 2}"
         // printfn $"%A{subtractionFunction 3 2}"
         // printfn $"%A{multiplicationFunction 3 2}"
@@ -76,11 +78,13 @@ module TenTasks =
         let square = fun x -> x * x
         let addFive = fun x -> x + 5
         
+        //3
         // printfn $"%A{compose square addFive 5}"
         // printfn $"%A{compose addFive square 5}"
         
         let filterGreaterThan2 = filterGreaterThan 2
         
+        //4
         // printfn $"%A{filterGreaterThan2 intList}"
         
         let isGreaterThan2 = fun x -> x > 2
@@ -88,9 +92,14 @@ module TenTasks =
         let containsA (str: string) = str.Contains("a")
         let wordList = ["hello"; "hi"; "world"; "go away"; "stay back"]
         
-        printfn $"%A{(findFirst isGreaterThan2 intList).Value}"
-        printfn $"%A{(findFirst containsA wordList).Value}"
-        printfn $"%A{findFirst isGreaterThan10 intList}"
+        //5
+        // printfn $"%A{(findFirst isGreaterThan2 intList).Value}"
+        // printfn $"%A{(findFirst containsA wordList).Value}"
+        // printfn $"%A{findFirst isGreaterThan10 intList}"
+        
+        //6
+        printfn $"%A{add5ThenSquare 5}"
+        printfn $"%A{add5ThenSquare 2}"
         
         printfn ""
 
