@@ -98,8 +98,24 @@ module TenTasks =
         // printfn $"%A{findFirst isGreaterThan10 intList}"
         
         //6
-        printfn $"%A{add5ThenSquare 5}"
-        printfn $"%A{add5ThenSquare 2}"
+        // printfn $"%A{add5ThenSquare 5}"
+        // printfn $"%A{add5ThenSquare 2}"
+        
+        //7
+        let rec fib self n =
+            if n <= 1 then n
+            else self (n - 1) + self (n - 2)
+        
+        let rec plainFib n =
+            if n <= 1 then n
+            else plainFib (n - 1) + plainFib (n - 2)
+        
+        let memoizedFib = memoize fib
+        
+        let time, result = Utils.timeFunction plainFib 41
+        printfn $"Not memoized- Time: {time}, Result: {result}"
+        let time2, result2 = Utils.timeFunction memoizedFib 41
+        printfn $"Memoized-     Time: {time2}, Result: {result2}"
         
         printfn ""
 

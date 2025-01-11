@@ -31,3 +31,10 @@ module FirstClassFunctions =
     
     let add5ThenSquare : int -> int =
         addFive >> square
+        
+    //7
+    let memoize (f: ('a -> 'b) -> 'a -> 'b) =
+        let cache = System.Collections.Concurrent.ConcurrentDictionary<'a, 'b>()
+        let rec memoizedFunc x =
+            cache.GetOrAdd(x, f memoizedFunc)
+        memoizedFunc
