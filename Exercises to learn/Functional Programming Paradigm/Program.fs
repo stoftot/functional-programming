@@ -1,5 +1,6 @@
 ﻿// For more information see https://aka.ms/fsharp-console-apps
 
+open System
 open Functional_Programming_Paradigm
 open Functional_Programming_Paradigm.Utils
 open Functional_Programming_Paradigm._10_tasks.first_class_functions.FirstClassFunctions
@@ -112,10 +113,24 @@ module TenTasks =
         
         let memoizedFib = memoize fib
         
-        let time, result = Utils.timeFunction plainFib 41
-        printfn $"Not memoized- Time: {time}, Result: {result}"
-        let time2, result2 = Utils.timeFunction memoizedFib 41
-        printfn $"Memoized-     Time: {time2}, Result: {result2}"
+        // let time, result = Utils.timeFunction plainFib 41
+        // printfn $"Not memoized- Time: {time}, Result: {result}"
+        // let time2, result2 = Utils.timeFunction memoizedFib 41
+        // printfn $"Memoized-     Time: {time2}, Result: {result2}"
+        
+        //8
+        let willFailFunction = fun () -> failwith "1 An error happened, oh no"
+        let mightFail = fun x -> if Random().Next(0, 100) > 25 then failwith "2 An error happened, oh no" else x
+        
+        try
+            printfn $"%A{retry willFailFunction 4}"
+        with
+        | ex -> printfn $"%A{ex.Message}"
+        
+        try
+            printfn $"%A{retry (fun () -> mightFail 3) 50}"
+        with
+        | ex -> printfn $"%A{ex.Message}"        
         
         printfn ""
 

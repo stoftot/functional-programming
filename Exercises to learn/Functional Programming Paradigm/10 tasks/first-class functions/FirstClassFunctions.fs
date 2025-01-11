@@ -1,5 +1,7 @@
 ﻿module Functional_Programming_Paradigm._10_tasks.first_class_functions.FirstClassFunctions
 
+open Microsoft.FSharp.Core
+
 module FirstClassFunctions =
     //1
     let transformList (list: 'a list) (transformer: 'a -> 'b) : 'b list =
@@ -38,3 +40,16 @@ module FirstClassFunctions =
         let rec memoizedFunc x =
             cache.GetOrAdd(x, f memoizedFunc)
         memoizedFunc
+        
+    //8
+    let retry (f: unit -> 'a) (numberOfRetries: int) =
+        let rec attempt n =
+            try
+                f ()
+            with
+            | ex ->
+                if n > 0 then
+                    attempt (n - 1)
+                else
+                    raise ex // Propagate the exception after all retries
+        attempt numberOfRetries
