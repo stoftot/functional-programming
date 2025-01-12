@@ -153,7 +153,12 @@ module TenTasks =
         
         let intToString (x: int) : string = string x          
         
-        printfn $"%A{mapList intToString intList}"
+        // printfn $"%A{mapList intToString intList}"
+        
+        //2
+        let isEven = fun x -> x % 2 = 0
+        
+        printfn $"%A{filterList isEven intList}"
         
         printfn ""
     
