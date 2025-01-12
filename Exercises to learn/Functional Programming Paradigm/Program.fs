@@ -4,6 +4,7 @@ open System
 open Functional_Programming_Paradigm
 open Functional_Programming_Paradigm.Utils
 open Functional_Programming_Paradigm._10_tasks.first_class_functions.FirstClassFunctions
+open Functional_Programming_Paradigm._10_tasks.higher_order_functions.HigherOrderFunctions
 open Microsoft.FSharp.Core
 
 module Paradigm =
@@ -140,11 +141,23 @@ module TenTasks =
         // printfn $"%A{mapReduce floorFloat sumList listOfFloat}"
         
         //10
-        let time3, result3 = timeFunction (fun () -> plainFib 41)
-        printfn $"Time: {time3}, Result:{result3}"
+        // let time3, result3 = timeFunction (fun () -> plainFib 41)
+        // printfn $"Time: {time3}, Result:{result3}"
         
         printfn ""
-
+    
+    open HigherOrderFunctions
+    let HigherOrderFunctions =
+        //1
+        let intList = [0; 1; 2; 3; 4; 5]
+        
+        let intToString (x: int) : string = string x          
+        
+        printfn $"%A{mapList intToString intList}"
+        
+        printfn ""
+    
+    
 module CombinedTasks =
     open Functional_Programming_Paradigm.Combined_tasks.PipelineWithAlgebraicDataTypes
     

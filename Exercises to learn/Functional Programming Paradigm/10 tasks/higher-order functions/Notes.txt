@@ -1,0 +1,19 @@
+Definition:
+higher-order functions are functions that either:
+- Take one or more functions as arguments: 
+  This means they can accept functions as input, 
+  allowing them to operate on or manipulate these functions.
+- Return a function as their result: 
+  This means the output of the higher-order function is itself a function, 
+  which can be invoked later.
+
+Characteristics of Higher-Order Functions
+- Abstraction: They allow for abstracting control flows, 
+  such as iteration, filtering, or mapping, in a reusable way.
+- First-Class Functions: Higher-order functions rely on the concept 
+of first-class functions, where functions are treated as values 
+that can be passed around and manipulated like other data types.
+
+Importance
+Higher-order functions are a key tool for code reuse, 
+modularity, and expressiveness, making them fundamental in functional programming paradigms.
