@@ -158,7 +158,17 @@ module TenTasks =
         //2
         let isEven = fun x -> x % 2 = 0
         
-        printfn $"%A{filterList isEven intList}"
+        // printfn $"%A{filterList isEven intList}"
+        
+        //3
+        let sortIntAcc = fun x y -> x - y
+        let sortIntDes = fun x y -> y - x
+        let sortStringOnSize (s: string) = s.Length
+        let wordList = ["bb"; "a"; "dddd"; "ccc"]
+        
+        printfn $"%A{sortPrimitiveTypeList sortIntAcc intList}"
+        printfn $"%A{sortPrimitiveTypeList sortIntDes intList}"
+        printfn $"%A{sortList sortStringOnSize wordList}"
         
         printfn ""
     

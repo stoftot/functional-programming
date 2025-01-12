@@ -8,3 +8,10 @@ module HigherOrderFunctions =
     //2
     let filterList (predicate: 'a -> bool) (lst: 'a list) : 'a list =
         lst |> List.filter predicate
+        
+    //3
+    let sortPrimitiveTypeList (comparator: 'a -> 'a -> int) (lst: 'a list) : 'a list =
+        lst |> List.sortWith comparator
+    
+    let sortList (comparator: 'a -> 'b) (lst: 'a list) : 'a list =
+        lst |> List.sortBy comparator
