@@ -1,0 +1,2 @@
+Use """ """ for printing functions that take a string as input
+Example: printfn $"""%A{foldReduce combineToString "" intList}"""
