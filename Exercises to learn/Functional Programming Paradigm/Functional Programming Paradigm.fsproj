@@ -42,7 +42,8 @@
       <Content Include="10 tasks\monads\Descreptions.txt" />
       <Content Include="10 tasks\monads\Notes.txt" />
       <Compile Include="Program.fs" />
-      <Content Include="generalNotes" />
+      <Content Include="Notes\generalNotes" />
+      <Content Include="Notes\SyntaxNotes" />
     </ItemGroup>
 
     <ItemGroup>
