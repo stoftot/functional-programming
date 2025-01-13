@@ -183,12 +183,18 @@ module TenTasks =
         let add5 = add 5
         let result = add5 10
         
-        printfn $"%A{result}"
+        // printfn $"%A{result}"
         
         let add2 = addWithExplicitCurring 2
         let result = add2 4
         
-        printfn $"%A{result}"
+        // printfn $"%A{result}"
+        
+        //6
+        let loggerSquare = logWrapper square
+        let result = loggerSquare 5
+        
+        printfn $"Result: %A{result}"
         
         printfn ""
     

@@ -27,3 +27,10 @@ module HigherOrderFunctions =
     let addWithExplicitCurring =
         fun x -> fun y -> x + y
     
+    //6
+    let logWrapper (f: 'a -> 'b) : 'a -> 'b =
+        fun x ->
+            printfn $"Input: %A{x}"
+            let result = f x
+            printfn $"Output: %A{result}"
+            result
