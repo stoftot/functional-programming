@@ -19,3 +19,11 @@ module HigherOrderFunctions =
     //4
     let transformFunction (f: 'a -> 'a) : 'a -> 'a =
         fun x -> f(f x)
+        
+    //5
+    let add (x: int) (y: int) : int =
+        x + y
+        
+    let addWithExplicitCurring =
+        fun x -> fun y -> x + y
+    

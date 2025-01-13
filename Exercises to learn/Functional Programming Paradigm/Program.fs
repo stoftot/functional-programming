@@ -176,8 +176,19 @@ module TenTasks =
         let add5Twice = transformFunction add5
         let squareTwice = transformFunction square
         
-        printfn $"%A{add5Twice 0}"
-        printfn $"%A{squareTwice 2}"
+        // printfn $"%A{add5Twice 0}"
+        // printfn $"%A{squareTwice 2}"
+        
+        //5
+        let add5 = add 5
+        let result = add5 10
+        
+        printfn $"%A{result}"
+        
+        let add2 = addWithExplicitCurring 2
+        let result = add2 4
+        
+        printfn $"%A{result}"
         
         printfn ""
     
