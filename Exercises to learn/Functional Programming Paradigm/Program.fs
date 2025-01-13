@@ -166,9 +166,18 @@ module TenTasks =
         let sortStringOnSize (s: string) = s.Length
         let wordList = ["bb"; "a"; "dddd"; "ccc"]
         
-        printfn $"%A{sortPrimitiveTypeList sortIntAcc intList}"
-        printfn $"%A{sortPrimitiveTypeList sortIntDes intList}"
-        printfn $"%A{sortList sortStringOnSize wordList}"
+        // printfn $"%A{sortPrimitiveTypeList sortIntAcc intList}"
+        // printfn $"%A{sortPrimitiveTypeList sortIntDes intList}"
+        // printfn $"%A{sortList sortStringOnSize wordList}"
+        
+        //4
+        let add5 = fun x -> x + 5
+        let square = fun x -> x * x
+        let add5Twice = transformFunction add5
+        let squareTwice = transformFunction square
+        
+        printfn $"%A{add5Twice 0}"
+        printfn $"%A{squareTwice 2}"
         
         printfn ""
     

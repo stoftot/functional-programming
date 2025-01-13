@@ -15,3 +15,7 @@ module HigherOrderFunctions =
     
     let sortList (comparator: 'a -> 'b) (lst: 'a list) : 'a list =
         lst |> List.sortBy comparator
+         
+    //4
+    let transformFunction (f: 'a -> 'a) : 'a -> 'a =
+        fun x -> f(f x)

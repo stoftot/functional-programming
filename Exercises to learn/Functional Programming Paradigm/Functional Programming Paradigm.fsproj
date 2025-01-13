@@ -28,6 +28,7 @@
       <Compile Include="10 tasks\first-class functions\FirstClassFunctions.fs" />
       <Content Include="10 tasks\higher-order functions\Descreptions.txt" />
       <Content Include="10 tasks\higher-order functions\Notes.txt" />
+      <Compile Include="10 tasks\higher-order functions\HigherOrderFunctions.fs" />
       <Content Include="10 tasks\type inference and polymorphism\Descreptions.txt" />
       <Content Include="10 tasks\type inference and polymorphism\Notes.txt" />
       <Content Include="10 tasks\recursion and tail recursion\Descreptions.txt" />
@@ -41,6 +42,7 @@
       <Content Include="10 tasks\monads\Descreptions.txt" />
       <Content Include="10 tasks\monads\Notes.txt" />
       <Compile Include="Program.fs" />
+      <Content Include="generalNotes" />
     </ItemGroup>
 
     <ItemGroup>
