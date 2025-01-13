@@ -22,3 +22,28 @@ the result is calculated normally and stored in a cache
 
 If the function is called again with the same input, 
 the cached result is returned immediately, skipping the computation.
+
+Curring
+In F#, all functions are curried by default.
+A curried function in functional programming is a 
+function that takes multiple arguments one at a time, 
+returning a new function at each step that takes the next argument, until all arguments are provided.
+
+Key Characteristics of Curried Functions:
+- Single Argument at a Time: 
+  Instead of taking all arguments at once, a curried function takes one argument 
+  and returns a function that takes the next.
+- Partial Application: 
+  You can supply only a subset of the required arguments, 
+  creating a new function waiting for the remaining arguments.
+
+Why Use Currying?
+- Reusability: 
+  Curried functions allow partial application, 
+  making it easier to create specialized versions of a more general function.
+- Composability: 
+  They facilitate composing functions, 
+  which is a core principle in functional programming.
+- Clarity: 
+  By splitting argument handling into steps, 
+  curried functions can make the flow of data through functions more explicit.
