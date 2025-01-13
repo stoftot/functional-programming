@@ -34,3 +34,14 @@ module HigherOrderFunctions =
             let result = f x
             printfn $"Output: %A{result}"
             result
+            
+    //7
+    let reduce (accumulator: 'b -> 'a -> 'b ) (initialValue: 'b) (lst: 'a list) : 'b =
+        let rec loop acc remainingList =
+            match remainingList with
+            | [] -> acc
+            | x :: xs -> loop (accumulator acc x) xs
+        loop initialValue lst
+        
+    let foldReduce (accumulator: 'b -> 'a -> 'b) (initialValue: 'b) (lst: 'a list) : 'b =
+        List.fold accumulator initialValue lst

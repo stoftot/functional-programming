@@ -192,9 +192,17 @@ module TenTasks =
         
         //6
         let loggerSquare = logWrapper square
-        let result = loggerSquare 5
+        // let result = loggerSquare 5
         
-        printfn $"Result: %A{result}"
+        // printfn $"Result: %A{result}"
+        
+        //7
+        let sumFunction acc x = acc + x
+        let combineToString (acc: string) (x: int) : string = acc + string x
+        
+        printfn $"%A{reduce sumFunction 0 intList}"
+        printfn $"%A{foldReduce sumFunction 0 intList}"
+        printfn $"""%A{foldReduce combineToString "" intList}"""
         
         printfn ""
     
