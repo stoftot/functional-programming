@@ -210,7 +210,15 @@ module TenTasks =
         let testValue = 3
         let result = filterFunction functions isEven testValue |> List.map (fun f -> f testValue)
         
-        printfn $"%A{result}"
+        // printfn $"%A{result}"
+        
+        //9
+        let square3Times = repeat square 3
+        let add5_5Times = repeat add5 5
+        
+        printfn $"%A{square3Times 2}"
+        printfn $"%A{add5_5Times 0}"
+        
         
         printfn ""
     

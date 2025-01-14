@@ -50,4 +50,11 @@ module HigherOrderFunctions =
     let filterFunction (functions: ('a -> 'b) list) (predicate: 'b -> bool) (testValue: 'a): ('a -> 'b) list =
         functions |> List.filter (fun f-> predicate(f testValue))
         
+    //9
+    let repeat (f: 'a -> 'a) (repetitions: int) : 'a -> 'a =
+        let rec applyFunction x count =
+            if count <= 0 then x
+            else applyFunction (f x) (count - 1)
+        fun x -> applyFunction x repetitions
+        
         
