@@ -45,3 +45,9 @@ module HigherOrderFunctions =
         
     let foldReduce (accumulator: 'b -> 'a -> 'b) (initialValue: 'b) (lst: 'a list) : 'b =
         List.fold accumulator initialValue lst
+        
+    //8
+    let filterFunction (functions: ('a -> 'b) list) (predicate: 'b -> bool) (testValue: 'a): ('a -> 'b) list =
+        functions |> List.filter (fun f-> predicate(f testValue))
+        
+        

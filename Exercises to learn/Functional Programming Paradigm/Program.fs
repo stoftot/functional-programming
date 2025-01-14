@@ -200,9 +200,17 @@ module TenTasks =
         let sumFunction acc x = acc + x
         let combineToString (acc: string) (x: int) : string = acc + string x
         
-        printfn $"%A{reduce sumFunction 0 intList}"
-        printfn $"%A{foldReduce sumFunction 0 intList}"
-        printfn $"""%A{foldReduce combineToString "" intList}"""
+        // printfn $"%A{reduce sumFunction 0 intList}"
+        // printfn $"%A{foldReduce sumFunction 0 intList}"
+        // printfn $"""%A{foldReduce combineToString "" intList}"""
+        
+        //8
+        let double = fun x -> x * 2
+        let functions = [add2; add5; square; squareTwice; double;]
+        let testValue = 3
+        let result = filterFunction functions isEven testValue |> List.map (fun f -> f testValue)
+        
+        printfn $"%A{result}"
         
         printfn ""
     
