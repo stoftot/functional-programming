@@ -57,4 +57,9 @@ module HigherOrderFunctions =
             else applyFunction (f x) (count - 1)
         fun x -> applyFunction x repetitions
         
+    //10
+    let combine (f: 'a -> 'b) (g: 'a -> 'c) : 'a -> 'b * 'c =
+        fun x -> f x, g x
+    
+        
         

@@ -216,9 +216,13 @@ module TenTasks =
         let square3Times = repeat square 3
         let add5_5Times = repeat add5 5
         
-        printfn $"%A{square3Times 2}"
-        printfn $"%A{add5_5Times 0}"
+        // printfn $"%A{square3Times 2}"
+        // printfn $"%A{add5_5Times 0}"
         
+        //10
+        let add5AndSquare = combine add5 square
+        
+        printfn $"%A{add5AndSquare 5}"
         
         printfn ""
     
