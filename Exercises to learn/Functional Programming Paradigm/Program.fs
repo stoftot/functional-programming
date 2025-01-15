@@ -247,7 +247,12 @@ module TenTasks =
         //4
         let mapIntToString = fun x -> string x
         
-        printfn $"%A{transformAll mapIntToString intList}"
+        // printfn $"%A{transformAll mapIntToString intList}"
+        
+        //5
+        printfn $"%A{comparePairs (1.2, 2.3) (2.4, 5.3)}"
+        printfn $"%A{comparePairs (5, 2) (2, 5)}"
+        printfn $"%A{comparePairs (5, 3) (2, 5)}"
         
         printf ""
     

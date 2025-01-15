@@ -15,4 +15,12 @@ module TypeInferenceAndPolymorphism =
         
     //4
     let transformAll (map: 'a -> 'b) (lst: 'a list) : 'b list =
-        lst |> List.map map 
+        lst |> List.map map
+        
+    //5
+    let inline comparePairs (pair1: 'a * 'b) (pair2: 'c * 'd) : int =
+        let a, b = pair1
+        let c, d = pair2
+        let sum1 = a + b
+        let sum2 = c + d
+        compare sum1 sum2
