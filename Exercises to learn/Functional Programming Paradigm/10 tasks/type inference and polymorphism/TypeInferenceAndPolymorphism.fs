@@ -4,3 +4,7 @@ module TypeInferenceAndPolymorphism =
     //1
     let identity (a: 'a) : 'a =
         a
+        
+    //2
+    let reverseList (lst: 'a list) : 'a list =
+        lst |> List.rev

@@ -230,8 +230,15 @@ module TenTasks =
     open TypeInferenceAndPolymorphism
     let TypeInferenceAndPolymorphism =
         //1
-        printfn $"%A{identity 1}"
-        printfn "%A" (identity "Hello world")
+        // printfn $"%A{identity 1}"
+        // printfn "%A" (identity "Hello world")
+        
+        //2
+        let intList = [0; 1; 2; 3; 4; 5;]
+        let letterList = ['a'; 'b'; 'c'; 'd';]
+        
+        printfn $"%A{reverseList intList}"
+        printfn $"%A{reverseList letterList}"
         
         printf ""
     
