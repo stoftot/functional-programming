@@ -241,8 +241,13 @@ module TenTasks =
         // printfn $"%A{reverseList letterList}"
         
         //3
-        printfn "%A" (swap 1 "a")
-        printfn $"%A{swap intList 2}"
+        // printfn "%A" (swap 1 "a")
+        // printfn $"%A{swap intList 2}"
+        
+        //4
+        let mapIntToString = fun x -> string x
+        
+        printfn $"%A{transformAll mapIntToString intList}"
         
         printf ""
     

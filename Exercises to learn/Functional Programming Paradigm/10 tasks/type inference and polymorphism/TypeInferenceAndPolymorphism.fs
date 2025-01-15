@@ -12,3 +12,7 @@ module TypeInferenceAndPolymorphism =
     //3
     let swap (a: 'a) (b: 'b) : 'b * 'a =
         b, a
+        
+    //4
+    let transformAll (map: 'a -> 'b) (lst: 'a list) : 'b list =
+        lst |> List.map map 
