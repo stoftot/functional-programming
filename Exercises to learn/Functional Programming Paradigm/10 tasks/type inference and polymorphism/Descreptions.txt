@@ -57,7 +57,6 @@ Overview: Demonstrates the use of type constraints (^T for numeric types)
 and polymorphism to handle various numeric types (e.g., int, float).
 
 
-
 Task 9: Generic Comparator for Custom Types
 Goal: Write a compareGeneric function that takes two values and a comparator function, 
 returning the comparison result.

@@ -31,6 +31,7 @@
       <Compile Include="10 tasks\higher-order functions\HigherOrderFunctions.fs" />
       <Content Include="10 tasks\type inference and polymorphism\Descreptions.txt" />
       <Content Include="10 tasks\type inference and polymorphism\Notes.txt" />
+      <Compile Include="10 tasks\type inference and polymorphism\TypeInferenceAndPolymorphism.fs" />
       <Content Include="10 tasks\recursion and tail recursion\Descreptions.txt" />
       <Content Include="10 tasks\recursion and tail recursion\Notes.txt" />
       <Content Include="10 tasks\algebraic data types\Descreptions.txt" />

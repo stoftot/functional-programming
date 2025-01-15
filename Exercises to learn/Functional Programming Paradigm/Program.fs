@@ -5,6 +5,7 @@ open Functional_Programming_Paradigm
 open Functional_Programming_Paradigm.Utils
 open Functional_Programming_Paradigm._10_tasks.first_class_functions.FirstClassFunctions
 open Functional_Programming_Paradigm._10_tasks.higher_order_functions.HigherOrderFunctions
+open Functional_Programming_Paradigm._10_tasks.type_inference_and_polymorphism.TypeInferenceAndPolymorphism
 open Microsoft.FSharp.Core
 
 module Paradigm =
@@ -222,9 +223,17 @@ module TenTasks =
         //10
         let add5AndSquare = combine add5 square
         
-        printfn $"%A{add5AndSquare 5}"
+        // printfn $"%A{add5AndSquare 5}"
         
         printfn ""
+        
+    open TypeInferenceAndPolymorphism
+    let TypeInferenceAndPolymorphism =
+        //1
+        printfn $"%A{identity 1}"
+        printfn "%A" (identity "Hello world")
+        
+        printf ""
     
     
 module CombinedTasks =
