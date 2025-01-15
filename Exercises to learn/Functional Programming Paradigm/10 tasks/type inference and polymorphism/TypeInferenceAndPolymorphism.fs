@@ -8,3 +8,7 @@ module TypeInferenceAndPolymorphism =
     //2
     let reverseList (lst: 'a list) : 'a list =
         lst |> List.rev
+        
+    //3
+    let swap (a: 'a) (b: 'b) : 'b * 'a =
+        b, a

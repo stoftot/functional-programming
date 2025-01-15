@@ -237,8 +237,12 @@ module TenTasks =
         let intList = [0; 1; 2; 3; 4; 5;]
         let letterList = ['a'; 'b'; 'c'; 'd';]
         
-        printfn $"%A{reverseList intList}"
-        printfn $"%A{reverseList letterList}"
+        // printfn $"%A{reverseList intList}"
+        // printfn $"%A{reverseList letterList}"
+        
+        //3
+        printfn "%A" (swap 1 "a")
+        printfn $"%A{swap intList 2}"
         
         printf ""
     
