@@ -1,2 +1,8 @@
 Use """ """ for printing functions that take a string as input
 Example: printfn $"""%A{foldReduce combineToString "" intList}"""
+
+Use inline when constraining input variables to the operation used in the function e.g
+let inline add (a: 'a) (b: 'a) : 'a =
+    a + b
+If inline wasn't used, 'a would be restricted to being an integer
+but by using inline it can be any numeric type
