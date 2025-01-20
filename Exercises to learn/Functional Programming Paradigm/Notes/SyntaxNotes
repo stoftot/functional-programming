@@ -8,3 +8,13 @@ If inline wasn't used, 'a would be restricted to being an integer
 but by using inline it can be any numeric type
 
 use fst to chose the first value of a tuple, and use snd to chose the second one
+
+use ref [] to create a mutable list
+ex.
+let myList = ref []
+Add element to the beginning
+myList.value <- <value> :: myList.value
+Add element to the end
+myList.value <- myList.value @ <value>
+
+id, the identify function 'T -> 'T
