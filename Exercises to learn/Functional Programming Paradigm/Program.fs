@@ -260,8 +260,13 @@ module TenTasks =
         
         //7
         let intStingList = [(1, "one"); (2, "two"); (3, "three"); (4, "four"); (5, "five");]
-        printfn $"%A{findByKey 3 intStingList}"
-        printfn $"%A{findByKey -2 intStingList}"
+        // printfn $"%A{findByKey 3 intStingList}"
+        // printfn $"%A{findByKey -2 intStingList}"
+        
+        //8
+        let floatList = [0.0; 1.1; 2.2; 3.3; 4.4; 5.5 ]
+        printfn $"%A{sumAll intList}"
+        printfn $"%A{sumAll floatList}"
         
         printf ""
     

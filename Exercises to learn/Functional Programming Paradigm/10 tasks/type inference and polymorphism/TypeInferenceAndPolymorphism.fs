@@ -37,3 +37,7 @@ module TypeInferenceAndPolymorphism =
         lst
         |> List.tryFind (fun (k, _) -> k = key)
         |> Option.map snd
+        
+    //8
+    let inline sumAll (lst: 'a list) : 'a =
+        lst |> List.sum
