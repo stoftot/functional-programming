@@ -265,8 +265,15 @@ module TenTasks =
         
         //8
         let floatList = [0.0; 1.1; 2.2; 3.3; 4.4; 5.5 ]
-        printfn $"%A{sumAll intList}"
-        printfn $"%A{sumAll floatList}"
+        // printfn $"%A{sumAll intList}"
+        // printfn $"%A{sumAll floatList}"
+        
+        //9
+        let compareInt (x: int) (y: int) : int =
+            if x < y then -1
+            elif x > y then 1
+            else 0
+        // printfn $"%A{compareGeneric 1 2 compareInt}"
         
         printf ""
     

@@ -41,3 +41,7 @@ module TypeInferenceAndPolymorphism =
     //8
     let inline sumAll (lst: 'a list) : 'a =
         lst |> List.sum
+        
+    //9
+    let compareGeneric (x: 'a) (y: 'a) (comp: 'a -> 'a -> int) : int =
+        comp x y
