@@ -250,9 +250,13 @@ module TenTasks =
         // printfn $"%A{transformAll mapIntToString intList}"
         
         //5
-        printfn $"%A{comparePairs (1.2, 2.3) (2.4, 5.3)}"
-        printfn $"%A{comparePairs (5, 2) (2, 5)}"
-        printfn $"%A{comparePairs (5, 3) (2, 5)}"
+        // printfn $"%A{comparePairs (1.2, 2.3) (2.4, 5.3)}"
+        // printfn $"%A{comparePairs (5, 2) (2, 5)}"
+        // printfn $"%A{comparePairs (5, 3) (2, 5)}"
+        
+        //6
+        printfn $"%A{mapOption mapIntToString (Some 2)}"
+        printfn $"%A{mapOption mapIntToString None}"
         
         printf ""
     

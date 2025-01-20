@@ -24,3 +24,10 @@ module TypeInferenceAndPolymorphism =
         let sum1 = a + b
         let sum2 = c + d
         compare sum1 sum2
+        
+    //6
+    let mapOption (f: 'a -> 'b) (value: Option<'a>) : Option<'b> =
+        if value.IsSome
+            then Some (f value.Value)
+        else
+            None
