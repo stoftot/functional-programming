@@ -255,8 +255,13 @@ module TenTasks =
         // printfn $"%A{comparePairs (5, 3) (2, 5)}"
         
         //6
-        printfn $"%A{mapOption mapIntToString (Some 2)}"
-        printfn $"%A{mapOption mapIntToString None}"
+        // printfn $"%A{mapOption mapIntToString (Some 2)}"
+        // printfn $"%A{mapOption mapIntToString None}"
+        
+        //7
+        let intStingList = [(1, "one"); (2, "two"); (3, "three"); (4, "four"); (5, "five");]
+        printfn $"%A{findByKey 3 intStingList}"
+        printfn $"%A{findByKey -2 intStingList}"
         
         printf ""
     

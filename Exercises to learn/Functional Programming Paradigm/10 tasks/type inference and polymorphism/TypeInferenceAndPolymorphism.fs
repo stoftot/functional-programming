@@ -31,3 +31,9 @@ module TypeInferenceAndPolymorphism =
             then Some (f value.Value)
         else
             None
+            
+    //7
+    let findByKey (key: 'a) (lst: ('a * 'b) list) : Option<'b> =
+        lst
+        |> List.tryFind (fun (k, _) -> k = key)
+        |> Option.map snd
