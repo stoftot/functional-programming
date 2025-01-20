@@ -45,3 +45,16 @@ module TypeInferenceAndPolymorphism =
     //9
     let compareGeneric (x: 'a) (y: 'a) (comp: 'a -> 'a -> int) : int =
         comp x y
+        
+    //10
+    let flatten (lst: 'a list list) : 'a list =
+        let newList = ref []
+        lst
+        |> List.map (fun lst -> lst |> List.map (fun e -> newList.Value <- newList.Value @ [e]))
+        |> ignore
+        newList.Value
+    
+    let betterFlatten (lst: 'T list list) : 'T list =
+        lst |> List.collect id
+
+        

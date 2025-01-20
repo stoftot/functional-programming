@@ -275,6 +275,11 @@ module TenTasks =
             else 0
         // printfn $"%A{compareGeneric 1 2 compareInt}"
         
+        //10
+        let nestedList = [[1; 2]; [3; 4]]
+        printfn $"%A{flatten nestedList}"
+        printfn $"%A{betterFlatten nestedList}"
+        
         printf ""
     
     
