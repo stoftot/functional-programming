@@ -6,3 +6,5 @@ let inline add (a: 'a) (b: 'a) : 'a =
     a + b
 If inline wasn't used, 'a would be restricted to being an integer
 but by using inline it can be any numeric type
+
+use fst to chose the first value of a tuple, and use snd to chose the second one
