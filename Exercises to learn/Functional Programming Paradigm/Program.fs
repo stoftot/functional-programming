@@ -303,7 +303,10 @@ module TenTasks =
         
         //5
         let intList = [0; 1; 2; 3; 4; 5;]
-        printfn $"%A{reverseList intList}"
+        // printfn $"%A{reverseList intList}"
+        
+        //6
+        printfn $"%A{tailReverseList intList}"
         
         printf ""
     

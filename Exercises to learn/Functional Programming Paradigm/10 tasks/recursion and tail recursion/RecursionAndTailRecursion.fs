@@ -39,4 +39,11 @@ module RecursionAndTailRecursion =
         match lst with
         | [] -> list.Empty
         | head :: tail -> reverseList tail @ [head]
-        
+    
+    //6
+    let tailReverseList (lst: 'T list) : 'T list =
+        let rec inner (lst: 'T list) (acc: 'T list) : 'T list =
+            match lst with
+            | [] -> acc
+            | head :: tail -> inner tail (head :: acc)
+        inner lst []
