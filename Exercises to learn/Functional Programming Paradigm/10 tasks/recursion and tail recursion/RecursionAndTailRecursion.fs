@@ -18,3 +18,10 @@ module RecursionAndTailRecursion =
             else
                 inner (n - 1L) (n * acc)
         inner n 1
+        
+    //3
+    let rec fib (n: int) : int =
+        if n <= 1
+            then 1
+        else
+            fib (n - 1) + fib (n - 2)
