@@ -20,4 +20,6 @@ myList.value <- myList.value @ <value>
 id, the identify function 'T -> 'T
 
 use @ to append something to the end of list
-[1; 2; 3;] @ [4]
+[1; 2; 3;] @ [4] = [1; 2; 3; 4;]
+use :: to prepend something to the front of a list
+4 :: [1; 2; 3;] = [4; 1; 2; 3;]
