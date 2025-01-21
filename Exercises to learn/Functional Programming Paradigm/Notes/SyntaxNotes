@@ -18,3 +18,6 @@ Add element to the end
 myList.value <- myList.value @ <value>
 
 id, the identify function 'T -> 'T
+
+use @ to append something to the end of list
+[1; 2; 3;] @ [4]
