@@ -33,3 +33,10 @@ module RecursionAndTailRecursion =
             if n <= 1 then b
             else inner (n - 1) b (a + b)
         inner n 1 1
+        
+    //5
+    let rec reverseList (lst: 'T list) : 'T list =
+        match lst with
+        | [] -> list.Empty
+        | head :: tail -> reverseList tail @ [head]
+        

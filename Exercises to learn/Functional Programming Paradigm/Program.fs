@@ -298,8 +298,12 @@ module TenTasks =
         // printfn $"%A{fib 6}"
         
         //4
-        printfn $"%A{tailFib 3}"
-        printfn $"%A{tailFib 6}"
+        // printfn $"%A{tailFib 3}"
+        // printfn $"%A{tailFib 6}"
+        
+        //5
+        let intList = [0; 1; 2; 3; 4; 5;]
+        printfn $"%A{reverseList intList}"
         
         printf ""
     
