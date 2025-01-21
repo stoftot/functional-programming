@@ -1,8 +1,0 @@
-Tasks:
-Additional Details:
-Each task should provide practical insight into recursion and its tail-recursive counterpart.
-
-Tasks like comparing efficiency (Tasks 7 and 9) 
-can be extended to visualize memory or time usage differences.
-
-Nested structures (Tasks 8 and 10) highlight more complex use cases of recursion in functional programming.
