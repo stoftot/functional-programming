@@ -5,6 +5,7 @@ open Functional_Programming_Paradigm
 open Functional_Programming_Paradigm.Utils
 open Functional_Programming_Paradigm._10_tasks.first_class_functions.FirstClassFunctions
 open Functional_Programming_Paradigm._10_tasks.higher_order_functions.HigherOrderFunctions
+open Functional_Programming_Paradigm._10_tasks.recursion_and_tail_recursion.RecursionAndTailRecursion.RecursionAndTailRecursion
 open Functional_Programming_Paradigm._10_tasks.type_inference_and_polymorphism.TypeInferenceAndPolymorphism
 open Microsoft.FSharp.Core
 
@@ -56,7 +57,7 @@ module Paradigm =
         // printfn "%A" (Monads.divideChain 6 0)
         // printfn "%A" (Monads.divideChain 6 3)
     
-        printfn ""
+        printf ""
 
 module TenTasks =
     open FirstClassFunctions
@@ -145,7 +146,7 @@ module TenTasks =
         // let time3, result3 = timeFunction (fun () -> plainFib 41)
         // printfn $"Time: {time3}, Result:{result3}"
         
-        printfn ""
+        printf ""
     
     open HigherOrderFunctions
     let HigherOrderFunctions =
@@ -225,7 +226,7 @@ module TenTasks =
         
         // printfn $"%A{add5AndSquare 5}"
         
-        printfn ""
+        printf ""
         
     open TypeInferenceAndPolymorphism
     let TypeInferenceAndPolymorphism =
@@ -277,8 +278,16 @@ module TenTasks =
         
         //10
         let nestedList = [[1; 2]; [3; 4]]
-        printfn $"%A{flatten nestedList}"
-        printfn $"%A{betterFlatten nestedList}"
+        // printfn $"%A{flatten nestedList}"
+        // printfn $"%A{betterFlatten nestedList}"
+        
+        printf ""
+    
+    open RecursionAndTailRecursion
+    let RecursionAndTailRecursion =
+        //1
+        printfn $"%A{factorial 3}"
+        printfn $"%A{factorial 5}"
         
         printf ""
     
@@ -293,4 +302,4 @@ module CombinedTasks =
         //               PipelineWithAlgebraicDataTypes.Rectangle (5, 5)]
         // printfn "%A" (PipelineWithAlgebraicDataTypes.pipeline shapes 20)
     
-        printfn ""
+        printf ""
