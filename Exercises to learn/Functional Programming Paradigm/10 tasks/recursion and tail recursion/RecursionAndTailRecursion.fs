@@ -24,4 +24,12 @@ module RecursionAndTailRecursion =
         if n <= 1
             then 1
         else
-            fib (n - 1) + fib (n - 2)
+            fib (n - 2) + fib (n - 1)
+            
+    //4
+    let tailFib (n: int) : int =
+        //a = n-2, b = n-1
+        let rec inner (n: int) (a: int) (b: int) : int =
+            if n <= 1 then b
+            else inner (n - 1) b (a + b)
+        inner n 1 1

@@ -294,8 +294,12 @@ module TenTasks =
         // printfn $"%A{tailFactorial 5}"
         
         //3
-        printfn $"%A{fib 3}"
-        printfn $"%A{fib 6}"
+        // printfn $"%A{fib 3}"
+        // printfn $"%A{fib 6}"
+        
+        //4
+        printfn $"%A{tailFib 3}"
+        printfn $"%A{tailFib 6}"
         
         printf ""
     
