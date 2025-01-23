@@ -15,4 +15,7 @@ module Utils =
         let result = f ()
         stopwatch.Stop()                     
         let elapsed = stopwatch.Elapsed
-        (elapsed, result)  
+        (elapsed, result)
+        
+    let generateIntList (x: int) : int list =
+        List.init x id
