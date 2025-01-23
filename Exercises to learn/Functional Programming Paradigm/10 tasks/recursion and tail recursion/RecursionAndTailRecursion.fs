@@ -62,3 +62,16 @@ module RecursionAndTailRecursion =
             | [] -> acc
             | head :: tail -> inner tail (head + acc)
         inner lst LanguagePrimitives.GenericZero
+        
+    //8
+    type Tree<'T> =
+        | Leaf
+        | Node of 'T * Tree<'T> * Tree<'T>
+        
+    let rec treeDepth (tree: Tree<'T>): int =
+        match tree with
+        | Leaf -> 0
+        | Node (_, left, right) ->
+            let l = treeDepth left + 1
+            let r = treeDepth right + 1
+            if l > r then l else r

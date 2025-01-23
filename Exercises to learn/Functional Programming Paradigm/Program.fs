@@ -311,8 +311,15 @@ module TenTasks =
         // printfn $"%A{tailReverseList intList}"
         
         //7
-        printfn $"%A{tailSumList (generateIntList 100_000)}"
-        printfn $"%A{sumList (generateIntList 100_000)}"
+        // printfn $"%A{tailSumList (generateIntList 100_000)}"
+        // printfn $"%A{sumList (generateIntList 100_000)}"
+        
+        //8
+        let tree = Node(1,
+                        Node(2, Leaf, Leaf),
+                        Node(3,Node(4,Leaf,Leaf),Leaf))
+        
+        printfn $"%A{treeDepth tree}"
         
         printf ""
     
