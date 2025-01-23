@@ -17,7 +17,7 @@ module FirstClassFunctions =
         | s -> failwith "not supported operation"
     
     //3    
-    let compose (f: 'a -> 'b) (g: 'b -> 'c) =
+    let compose (f: 'b -> 'c) (g: 'a -> 'b) =
         fun x -> f (g x)
     
     //4    
