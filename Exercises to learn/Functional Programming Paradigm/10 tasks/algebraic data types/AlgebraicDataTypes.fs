@@ -11,5 +11,13 @@ module AlgebraicDataTypes =
     let inline area (shape: Shape<'T>) : float =
         match shape with
         | Circle r -> Math.PI * float (r * r)
-        | Rectangle (h, w) -> float (h * w) 
-
+        | Rectangle (h, w) -> float (h * w)
+        
+    //2
+    type Person =
+        {Name: string
+         Age: int}
+    
+    let displayPerson (person: Person) : unit =
+        printfn $"Name: %A{person.Name}"
+        printfn $"Age: %A{person.Age}"

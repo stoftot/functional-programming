@@ -339,8 +339,13 @@ module TenTasks =
         let rect = Rectangle (3.3, 5.5)
         let circ = Circle 3
         
-        printfn $"%A{area rect}"
-        printfn $"%A{area circ}"
+        // printfn $"%A{area rect}"
+        // printfn $"%A{area circ}"
+        
+        //2
+        let person = {Name = "Bob"; Age = 22}
+        
+        displayPerson person
         
         printf ""
     
