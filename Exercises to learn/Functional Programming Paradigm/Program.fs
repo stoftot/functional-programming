@@ -322,7 +322,12 @@ module TenTasks =
         // printfn $"%A{treeDepth tree}"
         
         //9
-        printfn $"%A{tailTreeDepth tree}"
+        // printfn $"%A{tailTreeDepth tree}"
+        
+        //10
+        let nestedList = [[1; 2]; [3;]; [4; 5;];]
+        printfn $"%A{nestedList}"
+        printfn $"%A{flatten nestedList}"
         
         printf ""
     

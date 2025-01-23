@@ -94,3 +94,9 @@ module RecursionAndTailRecursion =
                 let newStack = (left, depth + 1) :: (right, depth + 1) :: rest
                 inner newStack maxDepth     
         inner [(tree, 0)] 0
+        
+    //10
+    let rec flatten (lst: 'a list list) : 'a list =
+        match lst with
+        | [] -> []
+        | head :: tail -> head @ flatten tail
