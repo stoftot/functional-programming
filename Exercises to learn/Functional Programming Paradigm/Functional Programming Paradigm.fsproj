@@ -38,6 +38,7 @@
       <Compile Include="10 tasks\recursion and tail recursion\RecursionAndTailRecursion.fs" />
       <Content Include="10 tasks\algebraic data types\Descreptions.txt" />
       <Content Include="10 tasks\algebraic data types\Notes.txt" />
+      <Compile Include="10 tasks\algebraic data types\AlgebraicDataTypes.fs" />
       <Content Include="10 tasks\strict and lazy evaluation\Descreptions.txt" />
       <Content Include="10 tasks\strict and lazy evaluation\Notes.txt" />
       <Content Include="10 tasks\parser combinators\Descreptions.txt" />

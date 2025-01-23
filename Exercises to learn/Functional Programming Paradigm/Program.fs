@@ -5,6 +5,8 @@ open Functional_Programming_Paradigm
 open Functional_Programming_Paradigm.RecursionAndTailRecursion.RecursionAndTailRecursion
 open Functional_Programming_Paradigm.Utils
 open Functional_Programming_Paradigm.Utils.Utils
+open Functional_Programming_Paradigm._10_tasks.algebraic_data_types
+open Functional_Programming_Paradigm._10_tasks.algebraic_data_types.AlgebraicDataTypes
 open Functional_Programming_Paradigm._10_tasks.first_class_functions.FirstClassFunctions
 open Functional_Programming_Paradigm._10_tasks.higher_order_functions.HigherOrderFunctions
 open Functional_Programming_Paradigm._10_tasks.recursion_and_tail_recursion.RecursionAndTailRecursion.RecursionAndTailRecursion
@@ -326,8 +328,19 @@ module TenTasks =
         
         //10
         let nestedList = [[1; 2]; [3;]; [4; 5;];]
-        printfn $"%A{nestedList}"
-        printfn $"%A{flatten nestedList}"
+        // printfn $"%A{nestedList}"
+        // printfn $"%A{flatten nestedList}"
+        
+        printf ""
+        
+    open AlgebraicDataTypes
+    let AlgebraicDataTypes =
+        //1
+        let rect = Rectangle (3.3, 5.5)
+        let circ = Circle 3
+        
+        printfn $"%A{area rect}"
+        printfn $"%A{area circ}"
         
         printf ""
     
