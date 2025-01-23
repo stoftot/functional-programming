@@ -11,7 +11,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="10 tasks\recursion and tail recursion\img.png" />
       <Content Include="Difrente paradigm\Descreptions.txt" />
       <Compile Include="Difrente paradigm\FirstClassFunction.fs" />
       <Compile Include="Difrente paradigm\HigherOrderFunctions.fs" />
@@ -34,6 +33,7 @@
       <Content Include="10 tasks\type inference and polymorphism\Notes.txt" />
       <Compile Include="10 tasks\type inference and polymorphism\TypeInferenceAndPolymorphism.fs" />
       <Content Include="10 tasks\recursion and tail recursion\Descreptions.txt" />
+      <Content Include="10 tasks\recursion and tail recursion\img.png" />
       <Content Include="10 tasks\recursion and tail recursion\Notes.md" />
       <Compile Include="10 tasks\recursion and tail recursion\RecursionAndTailRecursion.fs" />
       <Content Include="10 tasks\algebraic data types\Descreptions.txt" />

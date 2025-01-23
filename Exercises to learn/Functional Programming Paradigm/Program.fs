@@ -2,7 +2,9 @@
 
 open System
 open Functional_Programming_Paradigm
+open Functional_Programming_Paradigm.RecursionAndTailRecursion.RecursionAndTailRecursion
 open Functional_Programming_Paradigm.Utils
+open Functional_Programming_Paradigm.Utils.Utils
 open Functional_Programming_Paradigm._10_tasks.first_class_functions.FirstClassFunctions
 open Functional_Programming_Paradigm._10_tasks.higher_order_functions.HigherOrderFunctions
 open Functional_Programming_Paradigm._10_tasks.recursion_and_tail_recursion.RecursionAndTailRecursion.RecursionAndTailRecursion
@@ -306,7 +308,11 @@ module TenTasks =
         // printfn $"%A{reverseList intList}"
         
         //6
-        printfn $"%A{tailReverseList intList}"
+        // printfn $"%A{tailReverseList intList}"
+        
+        //7
+        printfn $"%A{tailSumList (generateIntList 100_000)}"
+        printfn $"%A{sumList (generateIntList 100_000)}"
         
         printf ""
     

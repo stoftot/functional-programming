@@ -47,3 +47,18 @@ module RecursionAndTailRecursion =
             | [] -> acc
             | head :: tail -> inner tail (head :: acc)
         inner lst []
+        
+    //7
+    let inline sumList (lst: 'a list) : 'a =
+        let rec helper (lst: 'a list) : 'a =
+            match lst with
+            | [] -> LanguagePrimitives.GenericZero
+            | head :: tail -> head + helper tail
+        helper lst
+        
+    let inline tailSumList (lst: 'a list) : 'a =
+        let rec inner (lst: 'a list) (acc: 'a) : 'a =
+            match lst with
+            | [] -> acc
+            | head :: tail -> inner tail (head + acc)
+        inner lst LanguagePrimitives.GenericZero
