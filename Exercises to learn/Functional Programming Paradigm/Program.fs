@@ -345,7 +345,11 @@ module TenTasks =
         //2
         let person = {Name = "Bob"; Age = 22}
         
-        displayPerson person
+        // displayPerson person
+        
+        //3
+        displayHttpStatus (Success 202)
+        displayHttpStatus (ServerError 505) 
         
         printf ""
     
