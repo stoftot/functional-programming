@@ -75,3 +75,22 @@ module RecursionAndTailRecursion =
             let l = treeDepth left + 1
             let r = treeDepth right + 1
             if l > r then l else r
+    
+    //9
+    //a stack is used to keep track of the unfolding tree
+    //First the root is added to the stack
+    //When a node is hit in the stack, it gets popped,
+    //and the left and the right child is added to the top of the stack
+    //When a leaf is hit, it gets popped,
+    //and the depth is matched against the current max depth
+    //When the stack is empty the max depth is returned
+    let tailTreeDepth (tree: Tree<'T>) : int =
+        let rec inner (stack: (Tree<'T> * int) list) (maxDepth: int) : int =
+            match stack with
+            | [] -> maxDepth
+            | (Leaf, depth) :: rest ->
+                inner rest (max maxDepth depth)
+            | (Node (_, left, right), depth) :: rest ->
+                let newStack = (left, depth + 1) :: (right, depth + 1) :: rest
+                inner newStack maxDepth     
+        inner [(tree, 0)] 0

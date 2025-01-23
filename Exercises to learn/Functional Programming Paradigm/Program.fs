@@ -319,7 +319,10 @@ module TenTasks =
                         Node(2, Leaf, Leaf),
                         Node(3,Node(4,Leaf,Leaf),Leaf))
         
-        printfn $"%A{treeDepth tree}"
+        // printfn $"%A{treeDepth tree}"
+        
+        //9
+        printfn $"%A{tailTreeDepth tree}"
         
         printf ""
     
