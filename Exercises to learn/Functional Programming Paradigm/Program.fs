@@ -8,6 +8,7 @@ open Functional_Programming_Paradigm.Utils.Utils
 open Functional_Programming_Paradigm._10_tasks.first_class_functions.FirstClassFunctions
 open Functional_Programming_Paradigm._10_tasks.higher_order_functions.HigherOrderFunctions
 open Functional_Programming_Paradigm._10_tasks.recursion_and_tail_recursion.RecursionAndTailRecursion.RecursionAndTailRecursion
+open Functional_Programming_Paradigm._10_tasks.strict_and_lazy_evaluation.StrictAndLazyEvaluation
 open Functional_Programming_Paradigm._10_tasks.type_inference_and_polymorphism.TypeInferenceAndPolymorphism
 open Microsoft.FSharp.Core
 
@@ -326,14 +327,24 @@ module TenTasks =
         
         //10
         let nestedList = [[1; 2]; [3;]; [4; 5;];]
-        printfn $"%A{nestedList}"
-        printfn $"%A{flatten nestedList}"
+        // printfn $"%A{nestedList}"
+        // printfn $"%A{flatten nestedList}"
         
         printf ""
     
+    open StrictAndLazyEvaluation
+    let StrictAndLazyEvaluation =
+        //1
+        let sideEffectFunction name value = 
+            printfn $"Evaluating %s{name} argument with value %d{value}"
+            value
+        
+        printfn $"""%A{strictSum (sideEffectFunction "First" 10) (sideEffectFunction "Second" 20)}"""
+        
+        printf ""
     
 module CombinedTasks =
-    open Functional_Programming_Paradigm.Combined_tasks.PipelineWithAlgebraicDataTypes
+    //open Functional_Programming_Paradigm.Combined_tasks.PipelineWithAlgebraicDataTypes
     
     let main = 
         // let shapes = [PipelineWithAlgebraicDataTypes.Circle 2

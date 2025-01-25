@@ -22,7 +22,6 @@
       <Compile Include="Difrente paradigm\Monads.fs" />
       <Content Include="Combined tasks\Discreptions.txt" />
       <Compile Include="Combined tasks\PipelineWithAlgebraicDataTypes.fs" />
-      <Compile Include="Combined tasks\RecursiveParserForNestedData.fs" />
       <Content Include="10 tasks\first-class functions\Descreptions.txt" />
       <Content Include="10 tasks\first-class functions\Notes.txt" />
       <Compile Include="10 tasks\first-class functions\FirstClassFunctions.fs" />
@@ -39,7 +38,8 @@
       <Content Include="10 tasks\algebraic data types\Descreptions.txt" />
       <Content Include="10 tasks\algebraic data types\Notes.txt" />
       <Content Include="10 tasks\strict and lazy evaluation\Descreptions.txt" />
-      <Content Include="10 tasks\strict and lazy evaluation\Notes.txt" />
+      <Content Include="10 tasks\strict and lazy evaluation\Notes.md" />
+      <Compile Include="10 tasks\strict and lazy evaluation\StrictAndLazyEvaluation.fs" />
       <Content Include="10 tasks\parser combinators\Descreptions.txt" />
       <Content Include="10 tasks\parser combinators\Notes.txt" />
       <Content Include="10 tasks\monads\Descreptions.txt" />
