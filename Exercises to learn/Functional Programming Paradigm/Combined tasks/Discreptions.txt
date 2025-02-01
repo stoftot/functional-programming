@@ -8,3 +8,9 @@ Function Pipeline with Algebraic Data Types
     
     Learning Outcome: This task demonstrates how algebraic data types 
     can be processed using higher-order functions like filter and map.
+    
+Recursive Parser for Nested Data
+Task: Create a parser for nested lists of integers, e.g., "[1, [2, [3]], 4]", 
+and return a tree-like structure using a discriminated union.
+
+Principles: Recursion, Parser Combinators, Algebraic Data Types

@@ -349,8 +349,8 @@ module TenTasks =
         // displayPerson person
         
         //3
-        displayHttpStatus (Success 202)
-        displayHttpStatus (ServerError 505) 
+        // displayHttpStatus (Success 202)
+        // displayHttpStatus (ServerError 505) 
         
         printf ""
     
