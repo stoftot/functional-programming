@@ -1,9 +1,10 @@
-﻿//All exercises are taking from the following book
+﻿//All exercises are from the following book
 //Functional Programming using F# by Michael R. Hansen and Hans Rischel, ISBN 9781107684065.
 
 open BookExcersises.Chapter1
 open BookExcersises.Chapter2
 open BookExcersises.Chapter3
+open BookExcersises.Chapter4
 
 module main =
     
@@ -139,5 +140,36 @@ module main =
         // printfn $"%A{compareTime2 (11,59,AM) (1,15,PM)}"
         // printfn $"%A{compareTime2 (11,59,AM) (12,59,AM)}"
         // printfn $"%A{compareTime2 (11,59,AM) (11,58,AM)}"
+        
+        printf ""
+        
+    open Chapter4
+    module chapter4 =
+        //4.1
+        // printfn $"%A{upto 10}"
+        
+        //4.2
+        // printfn $"%A{downTo1 10}"
+        
+        //4.3
+        // printfn $"%A{evenN 3}"
+        
+        //4.4
+        // printfn $"%A{altsum [2; -1; 3]}"
+        // printfn $"%A{altsum [5; 2; 8; 3]}"
+        // printfn $"%A{altsum []}"            
+        // printfn $"%A{altsum [10]}"
+        
+        //4.5
+        // printfn $"%A{rmodd (List.init 10 id)}"
+        
+        //4.6
+        // printfn $"%A{removeEvenInts (List.init 10 id)}"
+        
+        //4.7
+        let intList = [1;1;2;3;4;4;5;5;5;]
+        printfn $"%A{multiplicity 1 intList}"
+        printfn $"%A{multiplicity 2 intList}"
+        printfn $"%A{multiplicity 5 intList}"
         
         printf ""
