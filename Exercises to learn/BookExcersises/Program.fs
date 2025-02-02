@@ -3,6 +3,7 @@
 
 open BookExcersises.Chapter1
 open BookExcersises.Chapter2
+open BookExcersises.Chapter3
 
 module main =
     
@@ -83,5 +84,60 @@ module main =
         //2.13
         // printfn $"%A{curry (fun (x, y) -> x + y) 5 3}"
         // printfn $"%A{uncurry (fun x y -> x + y) (5, 3)}"
+        
+        printf ""
+        
+    open Chapter3
+    module chapter3 =
+        //3.1
+        // printfn $"""%A{compareTime (11,59,"AM") (1,15,"PM")}"""
+        // printfn $"""%A{compareTime (11,59,"AM") (12,59,"AM")}"""
+        // printfn $"""%A{compareTime (11,59,"AM") (11,58,"AM")}"""
+        // printfn ""
+        
+        let time1 = {h = 11; m = 59; f = "AM"}
+        let time2 = {h = 11; m = 58; f = "AM"}
+        // printfn $"%A{time1 < time2}"
+        // printfn $"%A{time1 > time2}"
+        // printfn $"%A{time1 = time2}"
+        
+        //3.2
+        // printfn $"%A{add (11,18,1) (1,1,1)}"
+        // printfn $"%A{add (11,22,1) (1,1,1)}"
+        // printfn $"%A{add (11,17,1) (1,1,1)}"
+        // printfn $"%A{subtract (1,1,1) (1,1,1)}"
+        // printfn ""
+        
+        let british1 = {po = 11; sh = 22; pe = 1}
+        let british2 = {po = 1; sh = 1; pe = 1}
+        
+        // printfn $"%A{british1.add british2}"
+        // printfn $"%A{british2.subtract british2}"
+        
+        //3.3
+        let z1 = Complex(3.0, 2.0)
+        let z2 = Complex(1.0, -4.0)
+        
+        // printfn $"%A{z1 + z2}"
+        // printfn $"%A{z1 - z2}"
+        // printfn $"%A{z1 * z2}"
+        // printfn $"%A{z1 / z2}"
+        
+        //3.4
+        let line = { a = 2.0; b = 3.0 }
+        
+        // printfn $"%A{line}"
+        // printfn $"%A{line.mirrorX ()}"
+        // printfn $"%A{line.mirrorY ()}"
+        
+        //3.5
+        // printfn $"%A{solveQuadratic (1.0, -3.0, 2.0)}"
+        // printfn $"%A{solveQuadratic (1.0, -2.0, 1.0)}"
+        // printfn $"%A{solveQuadratic (1.0, 1.0, 1.0)}"
+        
+        //3.6
+        // printfn $"%A{compareTime2 (11,59,AM) (1,15,PM)}"
+        // printfn $"%A{compareTime2 (11,59,AM) (12,59,AM)}"
+        // printfn $"%A{compareTime2 (11,59,AM) (11,58,AM)}"
         
         printf ""

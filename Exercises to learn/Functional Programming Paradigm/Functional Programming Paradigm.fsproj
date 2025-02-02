@@ -47,7 +47,8 @@
       <Content Include="10 tasks\monads\Notes.txt" />
       <Compile Include="Program.fs" />
       <Content Include="Notes\generalNotes" />
-      <Content Include="Notes\SyntaxNotes" />
+      <Content Include="Notes\img.png" />
+      <Content Include="Notes\SyntaxNotes.md" />
     </ItemGroup>
 
     <ItemGroup>
