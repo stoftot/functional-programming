@@ -28,3 +28,5 @@ Implementation for head :: tail when matching arrays
 match arr with
     | [||] -> acc
     | _ -> arr[0] <recursive func> arr[1..]
+    
+![img.png](img.png)
