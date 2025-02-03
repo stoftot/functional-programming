@@ -5,6 +5,7 @@ open BookExcersises.Chapter1
 open BookExcersises.Chapter2
 open BookExcersises.Chapter3
 open BookExcersises.Chapter4
+open BookExcersises.Chapter4.Chapter4
 
 module main =
     
@@ -167,9 +168,71 @@ module main =
         // printfn $"%A{removeEvenInts (List.init 10 id)}"
         
         //4.7
-        let intList = [1;1;2;3;4;4;5;5;5;]
-        printfn $"%A{multiplicity 1 intList}"
-        printfn $"%A{multiplicity 2 intList}"
-        printfn $"%A{multiplicity 5 intList}"
+        // let intList = [1;1;2;3;4;4;5;5;5;]
+        // printfn $"%A{multiplicity 1 intList}"
+        // printfn $"%A{multiplicity 2 intList}"
+        // printfn $"%A{multiplicity 5 intList}"
+        
+        //4.8
+        // printfn $"%A{split (List.init 10 id)}"
+        
+        //4.9
+        // let letterList = ['a';'b';'c';'d';'e';]
+        // printfn $"%A{zip letterList (List.init 5 id)}"
+        // printfn $"%A{zip letterList (List.init 6 id)}"
+        
+        //4.10
+        // printfn $"%A{prefix (List.init 5 id) (List.init 5 id)}"
+        // printfn $"%A{prefix (List.init 5 id) (List.init 6 id)}"
+        // printfn $"%A{prefix (List.init 6 id) (List.init 5 id)}"
+        // printfn $"%A{prefix (List.init 5 id) (List.init 6 id |> List.rev)}"
+        
+        //4.11.1
+        let weaklyAscending = [-3; -1; -1; 0; 3; 3; 3; 6; 7;]
+        let weaklyAscending2 = [-20; -1; 0; 3; 3; 6; 10]
+        // printfn $"%A{count weaklyAscending -1}"
+        // printfn $"%A{count weaklyAscending 3}"
+        
+        //4.11.2
+        // printfn $"%A{insert weaklyAscending 2}"
+        // printfn $"%A{insert weaklyAscending 4}"
+        // printfn $"%A{insert weaklyAscending 10}"
+        // printfn $"%A{insert weaklyAscending -5}"
+        // printfn $"%A{insert weaklyAscending -2}"
+        // printfn $"%A{insert [] -2}"
+        
+        //4.11.3
+        // printfn $"%A{intersect weaklyAscending weaklyAscending2}"
+        // printfn $"%A{intersect weaklyAscending2 weaklyAscending}"
+        // printfn $"%A{intersect weaklyAscending []}"
+        
+        //4.11.4
+        // printfn $"%A{plus [-1; 0; 4; 6;] [-10; -3; 2; 10;]}"
+        
+        //4.11.5
+        // printfn $"%A{minus weaklyAscending weaklyAscending2}"
+        
+        //4.12
+        // printfn $"%A{sum (fun x -> x >= 0) (List.init 5 id)}"
+        // printfn $"%A{sum (fun x -> x > 0) [-5; -3; -2; 0; 2; 5]}"
+        
+        //4.13.1
+        // printfn $"%A{min [-3; 0; -5; -10; 20; -30]}"
+        // printfn $"%A{min [-3; 0; -5; -100; 20; -30]}"
+        
+        //4.13.2
+        // printfn $"%A{delete [0;1;2;2;3;] 2}"
+        // printfn $"%A{delete [0;1;2;2;3;] 5}"
+        
+        //4.13.3
+        // printfn $"%A{mergeSort (List.init 5 id)}"
+        // printfn $"%A{mergeSort [5; -1; 4; 3; 3; 2; 6; -3]}"
+        
+        //4.14
+        // printfn $"%A{minList []}"
+        // printfn $"%A{minList [100; -20; -3; -4; -30; -50; 2000]}"
+        
+        //4.15
+        printfn $"%A{revrev [[];[1;2];[3;4;5]]}"
         
         printf ""
