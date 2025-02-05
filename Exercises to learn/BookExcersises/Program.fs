@@ -117,13 +117,13 @@ module main =
         // printfn $"%A{british2.subtract british2}"
         
         //3.3
-        let z1 = Complex(3.0, 2.0)
-        let z2 = Complex(1.0, -4.0)
+        let z1 = Complex(-3.3, 10.3)
+        let z2 = Complex(-3.2, -2.0)
         
-        // printfn $"%A{z1 + z2}"
-        // printfn $"%A{z1 - z2}"
-        // printfn $"%A{z1 * z2}"
-        // printfn $"%A{z1 / z2}"
+        printfn $"%A{z1 + z2}"
+        printfn $"%A{z1 - z2}"
+        printfn $"%A{z1 * z2}"
+        printfn $"%A{z1 / z2}"
         
         //3.4
         let line = { a = 2.0; b = 3.0 }
