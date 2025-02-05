@@ -155,4 +155,19 @@ module Chapter4 =
     let revrev (lst: int list list) : int list list =
         List.fold (fun acc sublist -> (List.rev sublist) :: acc) [] lst
 
+    //4.16
+    //1. (int * int list -> int list)
+        //It processes the list recursively by summing x with each element.
+    //2. (('a * 'a) list -> ('a * 'a) list)
+        //It duplicates each pair (x, y), but with the second occurrence reversed (y, x).
+    //3. ('a list -> 'a list)
+        //It mirrors the list around its center.
         
+    //4.17
+    // p ('a -> bool) ('a list) : 'a list
+    // Elements satisfying q are moved to the front
+    // and elements not satisfying q are moved to the back
+    
+    //4.18
+    // f ('a -> 'a) ('a list) : 'a list
+    // for ni it applies g 2^(i-1)
