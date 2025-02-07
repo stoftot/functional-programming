@@ -5,7 +5,7 @@ open BookExcersises.Chapter1
 open BookExcersises.Chapter2
 open BookExcersises.Chapter3
 open BookExcersises.Chapter4
-open BookExcersises.Chapter4.Chapter4
+open BookExcersises.Chapter5
 
 module main =
     
@@ -73,8 +73,8 @@ module main =
         // printfn $"%A{nextPrime 7}"
         
         //2.8
-        // printfn $"%A{bin (2, 1)}"
-        // printfn $"%A{bin (4, 2)}"
+        printfn $"%A{bin (2, 1)}"
+        printfn $"%A{bin (4, 3)}"
         
         //2.11
         // printfn $"%A{VAT 25 100}"
@@ -120,10 +120,10 @@ module main =
         let z1 = Complex(-3.3, 10.3)
         let z2 = Complex(-3.2, -2.0)
         
-        printfn $"%A{z1 + z2}"
-        printfn $"%A{z1 - z2}"
-        printfn $"%A{z1 * z2}"
-        printfn $"%A{z1 / z2}"
+        // printfn $"%A{z1 + z2}"
+        // printfn $"%A{z1 - z2}"
+        // printfn $"%A{z1 * z2}"
+        // printfn $"%A{z1 / z2}"
         
         //3.4
         let line = { a = 2.0; b = 3.0 }
@@ -233,6 +233,45 @@ module main =
         // printfn $"%A{minList [100; -20; -3; -4; -30; -50; 2000]}"
         
         //4.15
-        printfn $"%A{revrev [[];[1;2];[3;4;5]]}"
+        // printfn $"%A{revrev [[];[1;2];[3;4;5]]}"
         
+        printf ""
+        
+    module chapter5 =
+        //5.1
+        // printfn $"%A{ownFilter (fun x -> x % 2 = 0) (List.init 5 id)}"
+        
+        //5.2
+        // printfn $"%A{revrev5 [[];[1;2];[3;4;5]]}"
+        
+        //5.3
+        // printfn $"%A{sum5 (fun x -> x >= 0) (List.init 5 id)}"
+        // printfn $"%A{sum5 (fun x -> x > 0) [-5; -3; -2; 0; 2; 5]}"
+        
+        //5.4
+        // printfn $"%A{fac 5}"
+        // printfn $"%A{range fac 5}"
+        
+        //5.6
+        let r = set [("Alice", "Math"); ("Bob", "Physics"); ("Alice", "Physics")]
+        // printfn $"%A{domain r}"
+        // printfn $"%A{rangeS r}"
+        // printfn $"""%A{apply r "Bob"}"""
+        // printfn $"%A{symmetric (set [(1,2); (3,4)])}"
+        // printfn $"%A{reComp (set [(1,2);(0,2);(6,7)]) (set [(2,3);(7,8)])}"
+        // printfn $"%A{reComp2 (set [(1,2);(0,2);(6,7)]) (set [(2,3);(7,8)])}"
+            
+        // transitive (set [(1,2); (2,3); (3,4)])
+        // |> Seq.map string
+        // |> String.concat " | "
+        // |> printfn "[ %s ]"
+        //
+        // transitive (set [(1,2); (2,3); (3,5);(5,2)])
+        // |> Seq.map string
+        // |> String.concat " | "
+        // |> printfn "[ %s ]"
+        
+        //5.7
+        // printfn $"%A{allSubsets 4 3}"
+            
         printf ""
