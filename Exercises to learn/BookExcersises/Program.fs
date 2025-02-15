@@ -6,6 +6,7 @@ open BookExcersises.Chapter2
 open BookExcersises.Chapter3
 open BookExcersises.Chapter4
 open BookExcersises.Chapter5
+open BookExcersises.Chapter6
 
 module main =
     
@@ -73,8 +74,8 @@ module main =
         // printfn $"%A{nextPrime 7}"
         
         //2.8
-        printfn $"%A{bin (2, 1)}"
-        printfn $"%A{bin (4, 3)}"
+        // printfn $"%A{bin (2, 1)}"
+        // printfn $"%A{bin (4, 3)}"
         
         //2.11
         // printfn $"%A{VAT 25 100}"
@@ -274,4 +275,90 @@ module main =
         //5.7
         // printfn $"%A{allSubsets 4 3}"
             
+        printf ""
+        
+    module chapter6 =
+        //6.1
+        let expression6_1 =
+            Add(
+                Add(
+                    Const 0.0,
+                    Add(Const 1.1, Const 1.1)),
+                Add(
+                    Mul(Const 1.0, Const 3.0),
+                    Mul(Const 0.0, Const 2.4)))
+        
+        // printfn $"%A{red expression6_1}"
+        // printfn $"%A{red (red expression6_1)}"
+        // printfn $"%A{recursiveRed expression6_1}"
+        
+        //6.2
+        let expression6_2 =
+            Mul(
+                Add(X , Const 7.0),
+                Sub(X , Const 5.0))
+            
+        // printfn $"%A{postFix expression6_2}"
+        
+        //6.3
+        let expression6_3 =
+            Add(
+                Mul(
+                    Add(Const 1, Const 2),
+                    Sub(Const 5, Const 1)),
+                Sin(Div(
+                    Add(Const 3, X),
+                    Log(X))))
+        // printfn $"%A{toString expression6_3}"
+        
+        //6.4
+        let binTree = Node(
+            Node(Leaf 1, "ac", Leaf 2),
+            "bc",
+            Node(Leaf 3, "cc",
+                 Node(Leaf 4, "dc", Leaf 5)) )
+        
+        // printfn $"%A{leafVals binTree}"
+        // printfn $"%A{leafValsTail binTree}"
+        // printfn $"%A{nodeVals binTree}"
+        // printfn $"%A{nodeValsTail binTree}"
+        // printfn $"%A{vals binTree}"
+        // printfn $"%A{valsTail binTree}"
+        
+        //6.5
+        let anTree = Info(
+            Info(
+                Info(
+                    Info(Unspec, "maaa", Unspec),
+                    "maa",
+                    Info(Unspec, "faab", Unspec)),
+                "ma",
+                Info(
+                    Info(Unspec, "maba", Unspec),
+                    "fab",
+                    Info(Unspec, "fabb", Unspec)
+                    )),
+            "U",
+            Info(
+                Info(
+                    Info(Unspec, "mbaa", Unspec),
+                    "mba",
+                    Info(Unspec, "fbab", Unspec)),
+                "fb",
+                Info(
+                    Info(Unspec, "mbba", Unspec),
+                    "fbb",
+                    Info(
+                        Info(Unspec, "mbbba", Unspec),
+                        "fbbb",
+                        Info(
+                            Info(Unspec, "mbbbba", Unspec),
+                            "fbbbb",
+                            Info(Unspec, "fbbbbb", Unspec)))
+                    )))
+        
+        printfn $"%A{maleAnc anTree}"
+        printfn $"%A{maleAncBool anTree}"
+        printfn $"%A{maleAncBoolTail anTree}"
+        
         printf ""
