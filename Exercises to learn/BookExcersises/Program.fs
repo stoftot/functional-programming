@@ -312,11 +312,11 @@ module main =
         // printfn $"%A{toString expression6_3}"
         
         //6.4
-        let binTree = Node(
-            Node(Leaf 1, "ac", Leaf 2),
+        let binTree  =  BinTree.Node(
+            BinTree.Node(BinTree.Leaf 1, "ac", BinTree.Leaf 2),
             "bc",
-            Node(Leaf 3, "cc",
-                 Node(Leaf 4, "dc", Leaf 5)) )
+            BinTree.Node(BinTree.Leaf 3, "cc",
+                 BinTree.Node(BinTree.Leaf 4, "dc", BinTree.Leaf 5)) )
         
         // printfn $"%A{leafVals binTree}"
         // printfn $"%A{leafValsTail binTree}"
@@ -357,8 +357,12 @@ module main =
                             Info(Unspec, "fbbbbb", Unspec)))
                     )))
         
-        printfn $"%A{maleAnc anTree}"
-        printfn $"%A{maleAncBool anTree}"
-        printfn $"%A{maleAncBoolTail anTree}"
+        // printfn $"%A{maleAnc anTree}"
+        // printfn $"%A{maleAncBool anTree}"
+        // printfn $"%A{maleAncBoolTail anTree}"
+        
+        let binSearchTree = createBinTree [5; 3; 8; 1; 4; 7; 9]
+        printfn $"%A{binSearchTree}"
+        printfn $"%A{deleteSmallest binSearchTree}"
         
         printf ""

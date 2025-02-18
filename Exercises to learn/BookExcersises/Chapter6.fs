@@ -172,3 +172,76 @@ let maleAncBoolTail (tree: AncTree) : string list =
         | (Info(left,_,right), isMale)::rest when not isMale ->
             inner ((left, true)::(right, false)::rest) acc
     inner [(tree,false)] [] |> List.rev
+    
+//6.6
+type BinTreeSingle<'a when 'a : comparison> =
+    | Leaf
+    | Node of BinTreeSingle<'a> * 'a * BinTreeSingle<'a>
+    
+let rec addBin x t =
+    match t with
+    | Leaf -> Node(Leaf,x,Leaf)
+    | Node(tl,a,tr) when x < a -> Node(addBin x tl,a,tr)
+    | Node(tl,a,tr) when x > a -> Node(tl,a,addBin x tr)
+    | _ -> t    
+
+let createBinTree (values: 'a list) =
+    values |> List.fold (fun acc x -> addBin x acc) Leaf
+    
+let FindSmallest (tree: BinTreeSingle<'a>) : 'a option =
+    let rec inner (tree: BinTreeSingle<'a>) (acc: 'a option) =
+        match tree with
+        | Leaf -> acc
+        | Node (l,x,_) -> inner l (Some x)
+    inner tree None
+    
+//6.7
+type Proposition =
+    | Atom of string
+    | Not of Proposition
+    | And of Proposition * Proposition
+    | Or of Proposition * Proposition
+//2    
+let rec toNNF prop =
+    match prop with
+    | Not (Not p) -> toNNF p // ¬(¬p) <->  p
+    | Not (And (p, q)) -> Or (toNNF (Not p), toNNF (Not q)) // ¬(p ∧ q) <->  (¬p) ∨ (¬q)
+    | Not (Or (p, q)) -> And (toNNF (Not p), toNNF (Not q)) // ¬(p ∨ q) <-> (¬p) ∧ (¬q)
+    | And (p, q) -> And (toNNF p, toNNF q)
+    | Or (p, q) -> Or (toNNF p, toNNF q)
+    | Not p -> Not (toNNF p)
+    | Atom _ -> prop
+//3
+let rec distributeOr p q =
+    match (p, q) with
+    | (And (p1, p2), _) -> And (distributeOr p1 q, distributeOr p2 q)
+    | (_, And (q1, q2)) -> And (distributeOr p q1, distributeOr p q2)
+    | _ -> Or (p, q)
+
+let rec toCNF prop =
+    match toNNF prop with
+    | And (p, q) -> And (toCNF p, toCNF q)
+    | Or (p, q) ->
+        let p' = toCNF p
+        let q' = toCNF q
+        distributeOr p' q'
+    | _ -> prop
+//4
+let rec extractLiterals prop =
+    match prop with
+    | Atom a -> Set.singleton (Atom a)
+    | Not (Atom a) -> Set.singleton (Not (Atom a))
+    | Or (p, q) -> Set.union (extractLiterals p) (extractLiterals q)
+    | _ -> Set.empty
+
+let rec isTautologyCNF prop =
+    match prop with
+    | And (p, q) -> isTautologyCNF p && isTautologyCNF q
+    | Or (p, q) ->
+        let literals = extractLiterals (Or (p, q))
+        Set.exists (fun l -> Set.contains (Not l) literals) literals
+    | _ -> false
+
+let isTautology prop =
+    let cnfProp = toCNF prop
+    isTautologyCNF cnfProp
